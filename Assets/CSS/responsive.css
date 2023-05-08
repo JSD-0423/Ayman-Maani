@@ -31,12 +31,13 @@
     /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
 
     main{
-        margin-top: 15px;
+        margin-top: 25px;
     }
     
     .search-div{
         flex-wrap: wrap;
         border-radius: 10px;
+        top: 5vh;
     }
 
     .search-div span:nth-child(1){
@@ -95,6 +96,109 @@
         font-size: 0.7em;
         transform: translateY(0);
     }
+
+    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    main h3{
+        margin-top: 45%;
+        font-size: 1.2em;
+    }
+
+    .web-topics-box-parent{
+        margin-top: 5%;
+    }
+
+    .web-topic{
+        width: 100%;
+    }
+
+    .thumbnail-div{
+        height: 120px;
+    }
+
+    .thumbnail-div img{
+        width: 100%;
+        object-fit: fill;
+    }
+
+    /* Start of Custom images////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .web-topic:nth-child(5) .thumbnail-div img{ /* Angular Image */
+        transform: translateX(0px);
+    }
+
+    .web-topic:nth-child(6) .thumbnail-div img{ /* React Image */
+        transform: translateX(0) translateY(0);
+    }
+
+    .web-topic:nth-child(7) .thumbnail-div img{ /* Vue Image */
+        transform: translateX(0);
+    }
+
+    .web-topic:nth-child(10) .thumbnail-div img{ /* Ruby Image */
+        transform: translateY(0);
+    }
+
+    /* End of Custom Images ////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+    .topic-details-div h4{
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .topic-details-div h5{
+        font-size: 1em;
+        margin: 0 0 25px 0;
+    }
+
+    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
+
+    .star-rating-box{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 15px;
+    }
+
+    .star-border{
+        width: 20px;
+        height: 20px;
+    }
+      
+    .second-level-star{
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+
+    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
+
+    /*Custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
+
+    .web-topic:nth-child(2) .star-border:nth-child(4) .star-color-fill{ /* CSS star rating*/
+        top: -3px;
+        left: 7px;
+    }
+
+    .web-topic:nth-child(5) .star-border:nth-child(4) .star-color-fill{ /* Angular star rating*/
+        top: -3px;
+        left: 7px;
+    }
+
+    .web-topic:nth-child(7) .star-border:nth-child(4) .star-color-fill{ /* Vue star rating*/
+        top: -3px;
+        left: 7px;
+    }
+
+    /* End of custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
+
+    .topic-details-div p{
+        color: gray;
+        font-size: .8em;
+        margin-bottom: 15px;
+    }
+
 }
 
 
