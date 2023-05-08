@@ -129,7 +129,6 @@ body{
 
 main{
     background-color: var(--bg_body);
-    height: 100vh;
     overflow: hidden;
     margin-top: 10px;
 }
@@ -268,6 +267,21 @@ main{
     transform: translateX(-83px);
 }
 
+.web-topic:nth-child(13) .thumbnail-div img{ /*SQL Image*/
+    transform: translateX(-28px);
+}
+
+.web-topic:nth-child(15) .thumbnail-div img{ /*REST APIs Image*/
+    width: 100%;
+    object-fit: cover;
+}
+
+.web-topic:nth-child(20) .thumbnail-div img{ /*Websockets APIs Image*/
+    width: 100%;
+    height: auto;
+    transform: translateY(-30px);
+}
+
 .web-topic .container{
     margin-top: 15px;
     overflow: hidden;
@@ -285,6 +299,7 @@ main{
 }
 
 /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
+
 .star-rating-box{
     display: flex;
     flex-flow: row nowrap;
@@ -318,7 +333,11 @@ main{
     left: 0px;
     background-color: var(--bg_default);
 }
+
 /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
+
+
+/*Custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
 
 .web-topic:nth-child(2) .star-color-fill{ /* CSS star rating*/
     width: 20px;
@@ -348,9 +367,57 @@ main{
     background-color: var(--bg_default);
 }
 
+
+.web-topic:nth-child(13) .star-color-fill{ /* SQL star rating*/
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    background-color: var(--bg_default);
+}
+
+.web-topic:nth-child(14) .star-color-fill{ /* NoSQL star rating*/
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    background-color: var(--bg_default);
+}
+
+.web-topic:nth-child(15) .star-color-fill{ /* REST APIs star rating*/
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-color: var(--bg_default);
+}
+
+.web-topic:nth-child(17) .star-border:nth-child(4) .star-color-fill{ /* OAuth star rating*/
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    background-color: var(--bg_default);
+}
+
+.web-topic:nth-child(18) .star-border:nth-child(4) .star-color-fill{ /* JSON star rating*/
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    background-color: var(--bg_default);
+}
+
+/* End of custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
+
 .topic-details-div p{
     color: gray;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
 
 
