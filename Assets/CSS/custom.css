@@ -27,10 +27,6 @@
     /* overflow: hidden; */
 }
 
-.full-width{
-    width: 100%;
-}
-
 body{
     font-family: Nunito-Sans;
 }
@@ -38,6 +34,16 @@ body{
 h3, h4, h5, h6, p{
     color: var(--body-text);
 }
+
+.full-width{
+    width: 100%;
+}
+
+.d-none{
+    display: none;
+}
+
+
 
 
 /* END OF GLOBAL///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -129,7 +135,7 @@ h3, h4, h5, h6, p{
     font-weight: 200;
 }
 
-/* SEARCH BAR///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* SEARCH BAR/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 main{
     background-color: var(--bg_body);
@@ -219,7 +225,7 @@ main{
     transform: translateY(3px);
 }
 
-/* WEB TOPICS COURSES///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* WEB TOPICS COURSES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 main h3{
     font-weight: 700;
@@ -266,7 +272,6 @@ main h3{
 /* Start of Custom images////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .web-topic:nth-child(5) .thumbnail-div img{ /* Angular Image */
-    height: 100%;
     transform: translateX(-80px);
 }
 
@@ -470,7 +475,7 @@ main h3{
     height: 25px;
     position: absolute;
     top: -3px;
-    left: 6px;
+    left: 3px;
     background-color: var(--bg_default);
 }
 
@@ -479,7 +484,7 @@ main h3{
     height: 25px;
     position: absolute;
     top: -3px;
-    left: 6px;
+    left: 5px;
     background-color: var(--bg_default);
 }
 
@@ -526,4 +531,27 @@ main h3{
     margin-bottom: 18px;
 }
 
+/* FOOTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+footer{
+    background-color: var(--bg_body);
+}
+
+.Footer-message{
+    width: 100%;
+    background-color: var(--bg_body);
+    padding: 30px;
+}
+
+.Footer-message h6{
+    color: var(--body-text);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.footer-heart{
+    color: var(--heart-color);
+    transform: translateY(7px);
+    font-size: 1.4em;
+}
