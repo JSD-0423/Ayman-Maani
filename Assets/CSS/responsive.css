@@ -99,13 +99,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin-top: 130px;
+    .web-topic h3{
         font-size: 1.1em;
+        top: -11%;
     }
 
     .web-topics-box-parent{
-        margin-top: 10px;
+        margin-top: 160px;
     }
 
     .web-topics{
@@ -430,13 +430,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin-top: 126px;
+    .web-topic h3{
         font-size: 1.2em;
+        top: -11%;
     }
 
     .web-topics-box-parent{
-        margin-top: 10px;
+        margin-top: 160px;
     }
 
     .web-topics{
@@ -774,13 +774,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin-top: 124px;
+    .web-topic h3{
         font-size: 1.2em;
+        top: -11%;
     }
 
     .web-topics-box-parent{
-        margin-top: 10px;
+        margin-top: 150px;
     }
 
     .web-topics{
@@ -1118,13 +1118,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin-top: 126px;
+    .web-topic h3{
         font-size: 1.2em;
+        top: -13%;
     }
 
     .web-topics-box-parent{
-        margin-top: 10px;
+        margin-top: 160px;
     }
 
     .web-topics{
@@ -1463,13 +1463,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin-top: 126px;
+    .web-topic h3{
         font-size: 1.2em;
+        top: -15%
     }
 
     .web-topics-box-parent{
-        margin-top: 12px;
+        margin-top: 180px;
     }
 
     .web-topics{
@@ -1746,13 +1746,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin: 95px 0 0 30px;
+    .web-topic h3{
         font-size: 1.5em;
+        top: -12%;
     }
 
     .web-topics-box-parent{
-        margin-top: 20px;
+        margin-top: 140px;
     }
 
     /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
@@ -1797,13 +1797,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin: 120px 0 0 40px;
+    .web-topic h3{
         font-size: 1.5em;
+        top: -12%;
     }
 
     .web-topics-box-parent{
-        margin-top: 20px;
+        margin-top: 150px;
     }
 
     /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
@@ -1851,13 +1851,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin: 95px 0 0 50px;
+    .web-topic h3{
         font-size: 1.5em;
+        top: -12%;
     }
 
     .web-topics-box-parent{
-        margin-top: 15px;
+        margin-top: 135px;
     }
 
     /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
@@ -1905,13 +1905,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin: 95px 0 0 80px;
+    .web-topic h3{
         font-size: 1.5em;
+        top: -12%;
     }
 
     .web-topics-box-parent{
-        margin-top: 15px;
+        margin-top: 135px;
     }
 
     /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
@@ -1959,13 +1959,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin: 97px 0 0 90px;
+    .web-topic h3{
         font-size: 1.5em;
+        top: -14%;
     }
 
     .web-topics-box-parent{
-        margin-top: 15px;
+        margin-top: 150px;
     }
 
     /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
@@ -2013,20 +2013,20 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin: 105px 0 0 140px;
+    .web-topic h3{
         font-size: 1.5em;
+        top: -12%;
     }
 
     .web-topics-box-parent{
-        margin-top: 15px;
+        margin-top: 140px;
     }
 
     /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
 }
 
-@media screen  and (min-width:1280px) and (max-width:1800px){/*1280 --- 1800------------------------------------------------------------------------------------------------------------------------*/
+@media screen  and (min-width:1280px) and (max-width:1400px){/*1280 --- 1500------------------------------------------------------------------------------------------------------------------------*/
     .header-message{
         transform: translateY(-3px);
     }
@@ -2055,13 +2055,13 @@
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    main h3{
-        margin: 110px 0 0 90px;
+    .web-topic h3{
         font-size: 1.7em;
+        top: -12%;
     }
 
     .web-topics-box-parent{
-        margin-top: 17px;
+        margin-top: 140px;
     }
 
     /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
