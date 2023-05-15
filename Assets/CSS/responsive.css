@@ -1,51 +1,49 @@
-@media screen  and (min-width:320px) and (max-width:359px){/*320px --- 359px---------------------------------------------------------------------------------------------------------------*/
+@media(max-width: 767px){
+    .page-modes{
+        height: 67px;
+    }
+
     .page-title h1{
-        font-size: 1em;
+        font-size: 0.94rem;
     }
 
-    .modes-tab-buttons button{
-        padding-bottom: 0;
+    .modes-buttons{
+        padding: 5px 10px 0;
+        font-size: .8rem;
     }
 
-    .header-message h2{
-        font-size: 1em;
+    .mode-icon{
+        transform:translateY(0) ;
     }
 
-    .header-message{
-        margin: 0;
+    /* BANNER SECTION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .banner-message{
         transform: translateY(5px);
     }
 
-    .header-message p{
-        font-size: 0.8em;
+    .banner-custom-container{
+        padding-bottom: 30px;
     }
 
-    .brand-primary{
-        height: 5vh;
+    .banner-primary{
+        height: 23.5px;
     }
 
-    .brand-secondary{
-        height: 5vh;
+    .banner-secondary{
+        height: 23.5px;
+    }
+
+    .banner-message p{
+        font-size: .95rem;
+        font-weight: 300;
     }
     
     /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
 
-    main{
-        margin-top: 25px;
-    }
     
-    .search-div{
+    .search-bar{
         flex-wrap: wrap;
-        border-radius: 10px;
-        top: 9vh;
-    }
-
-    .search-div span:nth-child(1){
-        width: 11%;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
     }
 
     .search-icon{
@@ -55,27 +53,27 @@
     
     .search-field{
         width: 89%;
-        padding: 15px 0  10px 0;
-        position: relative;
+        padding: 15px 0 15px ; 
     }
 
     .search-field:placeholder-shown{
-        font-size: 0.9em;
+        font-size: 1rem;
+        padding-left: 8px;
     }
 
     .search-field:focus{
-        font-size: 0.9em;
+        font-size: 1rem;
     }
 
     .search-options{
         width: 50%;
         border-top: 1px solid #DDDDDD;
-        padding: 5px 0 5px 10px;
+        border-left: 0;
+        padding: 3px 0 6px 13px;
     }
 
-    .search-options::before{
-        width: 0;
-        height: 0;
+    .search-icon{
+        font-size: 1.01rem;
     }
 
     .search-sort-option{
@@ -83,197 +81,47 @@
     }
 
     .search-options p:nth-child(1){
-        width: 100%;
-        font-size: 0.6em;
-        margin-bottom: 3px;
-    }
-
-    .search-options p:nth-child(2){
-        font-size: 0.9em;
+        font-size: 0.65rem;
+        padding: 0;
     }
     
     .search-down-arrow{
         font-size: 0.7em;
-        transform: translateY(0);
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    .web-topic h3{
-        font-size: 1.1em;
-        top: -11%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 160px;
+    .main-custom-container h3{
+        font-weight: 700;
+        font-size: 1.41rem;
     }
 
     .web-topics{
-        justify-content: unset;
+        grid-template-columns: minmax(100%, 20%);
         column-gap: 0;
     }
 
-    .web-topic{
-        width: 100%;
-    }
+    /* Web topic card details style//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-    .thumbnail-div{
-        height: 120px;
-    }
-
-    .thumbnail-div img{
-        width: 100%;
-    }
-
-    /* Start of Custom images////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic:nth-child(1) .thumbnail-div img{ /* HTML Image */
-        height: auto;
-        transform: translateY(-15px);
-    }  
-
-    .web-topic:nth-child(3) .thumbnail-div img{ /* JavaScript Image */
-        height: auto;
-        transform: translateY(-23px);
-    }   
-
-    .web-topic:nth-child(5) .thumbnail-div img{ /* Angular Image */
-        transform: translateX(0px);
-    }
-
-    .web-topic:nth-child(6) .thumbnail-div img{ /* React Image */
-        height: auto;
-        transform: translateX(0) translateY(-15px);
-    }
-
-    .web-topic:nth-child(7) .thumbnail-div img{ /* Vue Image */
-        height: auto;
-        transform: translateX(0);
-    }
-
-    .web-topic:nth-child(8) .thumbnail-div img{ /* Node Image */
-        height: auto;
-        transform: translateX(0) translateY(-20px);
-    }
-
-    .web-topic:nth-child(9) .thumbnail-div img{ /* Express Image */
-        height: auto;
-        transform: translateX(0) translateY(-20px);
-    }
-
-    .web-topic:nth-child(10) .thumbnail-div img{ /* Ruby Image */
-        height: 120%;
-        transform: translateY(-13px);
-    }
-
-    .web-topic:nth-child(11) .thumbnail-div img{ /* Django Image */
-        height: auto;
-        transform: translateY(-25px);
-    }
-
-    .web-topic:nth-child(12) .thumbnail-div img{ /* Flask Image */
-        height: auto;
-        transform: translateY(-5px);
-    }
-
-    .web-topic:nth-child(13) .thumbnail-div img{ /* SQL Image */
-        height: auto;
-        transform: translateX(0);
-    }
-
-    .web-topic:nth-child(16) .thumbnail-div img{ /* GraphQL Image */
-        height: auto;
-        transform: translateY(-25px);
-    }
-
-    .web-topic:nth-child(20) .thumbnail-div img{ /* WebSockets Image */
-        height: auto;
-        transform: translateY(-65px);
-    }
-
-    .web-topic:nth-child(22) .thumbnail-div img{ /* Accessibility Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(26) .thumbnail-div img{ /* Performance Optimiziation Image */
-        height: auto;
-        transform: translateY(-17px);
-    }
-
-    .web-topic:nth-child(27) .thumbnail-div img{ /* Corss-Browser Compatibility Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(28) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(37) .thumbnail-div img{ /* Web Accessibility */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(38) .thumbnail-div img{ /* CMS Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(39) .thumbnail-div img{ /* Web Analytics Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    /* End of Custom Images ////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div h4{
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
-    .topic-details-div h5{
-        font-size: 1em;
-        margin: 0 0 30px 0;
-    }
-
-    .web-topic:nth-child(28) h5{ /* Custom margin (between h5 and stars) for SEO web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(31) h5{ /* Custom margin (between h5 and stars) for Continuous Integration web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(37) h5{ /* Custom margin (between h5 and stars) for Web Accessibility Initiative (WAI) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(38) h5{ /* Custom margin (between h5 and stars) for Content Management Systems (CMS) web-topic div*/
-        margin: 0 0 30px 0;
+    .card-custom-container{
+        margin-top: 0px;
+        padding-inline: 4%;
     }
 
     /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
 
-    .star-rating-box{
-        display: flex;
-        flex-flow: row nowrap;
-        margin-bottom: 10px;
+    .star-border{
+        width: 15px;
+        height: 16px;
     }
 
-    .star-border{
-        width: 17px;
-        height: 17px;
-    }
-        
     .second-level-star{
         width: 11px;
-        height: 11px;
-        position: absolute;
-        top: 3px;
-        left: 3px;
+        height: 12px;
+        top: 2px;
+        left: 2px;
     }
+        
 
     /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
 
@@ -316,1757 +164,183 @@
 
     /* End of custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
 
-    .topic-details-div p{
-        color: gray;
-        font-size: .8em;
-        margin-bottom: 15px;
+    .card-details p{
+        font-size: .75em;
     }
 
-    /* FOOTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .Footer-message{
-        padding: 20px 0;
+    .details-page{
+        width: 100%;
+        transition: all ease-in .5s;
+        margin-right: -100%;
+        /* transform: translateX(100%); */
+        /* opacity: 0; */
     }
 
 }
+@media(min-width: 768px) and (max-width: 799px){
+    /* BANNER SECTION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen  and (min-width:360px) and (max-width:389px){ /*360px --- 389px---------------------------------------------------------------------------------------------------------------*/
-    .page-title h1{
-        font-size: 1.2em;
+    .banner-primary{
+        height: 50px;
     }
 
-    .modes-tab-buttons button{
-        padding-bottom: 0;
+    .banner-secondary{
+        height: 50px;
     }
 
-    .header-message h2{
-        font-size: 1.2em;
+    .banner-message{
+        transform: translateY(0);
     }
 
-    .header-message{
-        transform: translateY(8px);
-    }
-
-    .header-message p{
-        font-size: .9em;
-    }
-
-    .brand-primary{
-        height: 4vh;
-    }
-
-    .brand-secondary{
-        height: 4vh;
-    }
-
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 20px;
-    }
-
-    .search-div{
-        top: 40px;
-        flex-wrap: wrap;
-        border-radius: 10px;
-    }
-
-    .search-div span:nth-child(1){
-        width: 10%;
-        padding:0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .search-icon{
-        font-size: 0.9em;
-        transform: translateY(3px);
+    .banner-custom-container{
+        padding-bottom: 20px;
     }
     
+    /* SEARCH BAR//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
     .search-field{
-        width: 90%;
-        padding: 15px 0  10px 0;
-        position: relative;
-    }
-
-    .search-field:placeholder-shown{
-        font-size: 0.9em;
-    }
-
-    .search-field:focus{
-        font-size: 0.9em;
+        width: 56%;
     }
 
     .search-options{
-        width: 50%;
-        border-top: 1px solid #DDDDDD;
-        padding: 5px 0 5px 10px;
-    }
-
-    .search-options::before{
-        width: 0;
-        height: 0;
-    }
-
-    .search-sort-option{
-        border-right: 1px solid #DDDDDD;
-    }
-
-    .search-options p:nth-child(1){
-        width: 100%;
-        font-size: 0.6em;
-        margin-bottom: 0;
+        width: 20%;
     }
 
     .search-options p:nth-child(2){
-        font-size: 0.9em;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-        transform: translateY(0);
+        width: 82%;
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    .web-topic h3{
-        font-size: 1.2em;
-        top: -11%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 160px;
-    }
-
     .web-topics{
-        column-gap: 0;
-        row-gap:30px ;
-    }
-
-    .web-topic{
-        width: 100%;
-    }
-
-    .thumbnail-div{
-        height: 150px;
-    }
-
-    .thumbnail-div img{
-        width: 100%;
-    }
-
-    /* Start of Custom images////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic:nth-child(1) .thumbnail-div img{ /* HTML Image */
-        height: auto;
-        transform: translateY(-15px);
-    }  
-
-    .web-topic:nth-child(2) .thumbnail-div img{ /* CSS Image */
-        height: auto;
-        transform: translateY(-20px);
-    }  
-
-    .web-topic:nth-child(3) .thumbnail-div img{ /* JavaScript Image */
-        height: 130%;
-        transform: translateY(-20px);
-    }   
-
-    .web-topic:nth-child(5) .thumbnail-div img{ /* Angular Image */
-        transform: translateX(0px);
-    }
-
-    .web-topic:nth-child(6) .thumbnail-div img{ /* React Image */
-        height: auto;
-        transform: translateX(0) translateY(-20px);
-    }
-
-    .web-topic:nth-child(7) .thumbnail-div img{ /* Vue Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(8) .thumbnail-div img{ /* Node Image */
-        height: auto;
-        transform: translateX(0) translateY(-40px);
-    }
-
-    .web-topic:nth-child(9) .thumbnail-div img{ /* Express Image */
-        height: auto;
-        transform: translateX(0) translateY(-35px);
-    }
-
-    .web-topic:nth-child(10) .thumbnail-div img{ /* Ruby Image */
-        height: 120%;
-        transform: translateY(-13px) translateX(-40px);
-    }
-
-    .web-topic:nth-child(11) .thumbnail-div img{ /* Django Image */
-        height: auto;
-        transform: translateY(-25px);
-    }
-
-    .web-topic:nth-child(12) .thumbnail-div img{ /* Flask Image */
-        height: auto;
-        transform: translateY(-5px);
-    }
-
-    .web-topic:nth-child(13) .thumbnail-div img{ /* SQL Image */
-        height: auto;
-        transform: translateX(0);
-    }
-
-    .web-topic:nth-child(16) .thumbnail-div img{ /* GraphQL Image */
-        height: auto;
-        transform: translateY(-35px);
-    }
-
-    .web-topic:nth-child(17) .thumbnail-div img{ /* OAuth Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(20) .thumbnail-div img{ /* WebSockets Image */
-        height: auto;
-        transform: translateY(-75px);
-    }
-
-    .web-topic:nth-child(22) .thumbnail-div img{ /* Accessibility Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(26) .thumbnail-div img{ /* Performance Optimiziation Image */
-        height: auto;
-        transform: translateY(-35px);
-    }
-
-    .web-topic:nth-child(27) .thumbnail-div img{ /* Corss-Browser Compatibility Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(28) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(30) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(37) .thumbnail-div img{ /* Web Accessibility */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(38) .thumbnail-div img{ /* CMS Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(39) .thumbnail-div img{ /* Web Analytics Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    /* End of Custom Images ////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div h4{
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
-    .topic-details-div h5{
-        font-size: 1em;
-        margin: 0 0 30px 0;
-    }
-
-    .web-topic:nth-child(28) h5{ /* Custom margin (between h5 and stars) for SEO web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(31) h5{ /* Custom margin (between h5 and stars) for Continuous Integration web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(37) h5{ /* Custom margin (between h5 and stars) for Web Accessibility Initiative (WAI) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(38) h5{ /* Custom margin (between h5 and stars) for Content Management Systems (CMS) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-
-    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
-
-    .star-rating-box{
-        display: flex;
-        flex-flow: row nowrap;
-        margin-bottom: 10px;
-    }
-
-    .star-border{
-        width: 17px;
-        height: 17px;
-    }
-        
-    .second-level-star{
-        width: 11px;
-        height: 11px;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-    }
-
-    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
-
-    /*Custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .web-topic:nth-child(2) .star-border:nth-child(4) .star-color-fill{ /* CSS star rating*/
-        top: -3px;
-        left: 7px;
-    }
-
-    .web-topic:nth-child(5) .star-border:nth-child(4) .star-color-fill{ /* Angular star rating*/
-        top: -3px;
-        left: 8px;
-    }
-
-    .web-topic:nth-child(7) .star-border:nth-child(4) .star-color-fill{ /* Vue star rating*/
-        top: -3px;
-        left: 7px;
-    }
-
-    .web-topic:nth-child(15) .star-color-fill{ /* REST APIs star rating*/
-        top: -1px;
-        left: 1px;
-    }
-
-    .web-topic:nth-child(17) .star-border:nth-child(4) .star-color-fill{ /* OAuth star rating*/
-        top: -3px;
-        left: 6px;
-    }
-
-    .web-topic:nth-child(18) .star-border:nth-child(4) .star-color-fill{ /* JSON star rating*/
-        top: -3px;
-        left: 6px;
-    }
-
-    .web-topic:nth-child(33) .star-color-fill{ /* Cloud Computing star rating */
-        top: -3px;
-        left: 4px;
-    }
-
-    /* End of custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div p{
-        color: gray;
-        font-size: .8em;
-        margin-bottom: 15px;
-    }
-
-    /* FOOTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .Footer-message{
-        padding: 20px 0;
+        grid-template-columns: 31.04% 31.04% 31.04%;
+        column-gap: 3.35%;
     }
 }
+@media(min-width: 800px) and (max-width: 911px){
+    /* BANNER SECTION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen  and (min-width:390px) and (max-width:411px){ /*390px --- 411px---------------------------------------------------------------------------------------------------------------*/
-    .page-title h1{
-        font-size: 1.2em;
+    .banner-primary{
+        height: 50px;
     }
 
-    .modes-tab-buttons button{
-        padding-bottom: 0;
+    .banner-secondary{
+        height: 50px;
     }
 
-    .header-message h2{
-        font-size: 1.3em;
+    .banner-message{
+        transform: translateY(0);
     }
 
-    .header-message{
-        transform: translateY(8px);
-    }
-
-    .header-message p{
-        font-size: 1em;
-    }
-
-    .brand-primary{
-        height: 4vh;
-    }
-
-    .brand-secondary{
-        height: 4vh;
-    }
-
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-div{
-        flex-wrap: wrap;
-        border-radius: 10px;
-    }
-
-    .search-div span:nth-child(1){
-        width: 10%;
-        padding:0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .search-icon{
-        font-size: 0.9em;
-        transform: translateY(3px);
+    .banner-custom-container{
+        padding-bottom: 20px;
     }
     
+    /* SEARCH BAR//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
     .search-field{
-        width: 90%;
-        padding: 15px 0  10px 0;
-        position: relative;
-    }
-
-    .search-field:placeholder-shown{
-        font-size: 0.9em;
-    }
-
-    .search-field:focus{
-        font-size: 0.9em;
+        width: 56%;
     }
 
     .search-options{
-        width: 50%;
-        border-top: 1px solid #DDDDDD;
-        padding: 5px 0 5px 10px;
-    }
-
-    .search-options::before{
-        width: 0;
-        height: 0;
-    }
-
-    .search-sort-option{
-        border-right: 1px solid #DDDDDD;
-    }
-
-    .search-options p:nth-child(1){
-        width: 100%;
-        font-size: 0.6em;
-        margin-bottom: 0;
+        width: 20%;
     }
 
     .search-options p:nth-child(2){
-        font-size: 0.9em;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-        transform: translateY(0);
+        width: 82%;
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    .web-topic h3{
-        font-size: 1.2em;
-        top: -11%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 150px;
-    }
-
     .web-topics{
-        column-gap: 0;
-        row-gap:30px ;
-    }
-
-    .web-topic{
-        width: 100%;
-    }
-
-    .thumbnail-div{
-        height: 150px;
-    }
-
-    .thumbnail-div img{
-        width: 100%;
-    }
-
-    /* Start of Custom images////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic:nth-child(1) .thumbnail-div img{ /* HTML Image */
-        height: auto;
-        transform: translateY(-15px);
-    }  
-
-    .web-topic:nth-child(2) .thumbnail-div img{ /* CSS Image */
-        height: auto;
-        transform: translateY(-20px);
-    }  
-
-    .web-topic:nth-child(3) .thumbnail-div img{ /* JavaScript Image */
-        height: 130%;
-        transform: translateY(-20px);
-    }   
-
-    .web-topic:nth-child(5) .thumbnail-div img{ /* Angular Image */
-        transform: translateX(0px);
-    }
-
-    .web-topic:nth-child(6) .thumbnail-div img{ /* React Image */
-        height: auto;
-        transform: translateX(0) translateY(-20px);
-    }
-
-    .web-topic:nth-child(7) .thumbnail-div img{ /* Vue Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(8) .thumbnail-div img{ /* Node Image */
-        height: auto;
-        transform: translateX(0) translateY(-40px);
-    }
-
-    .web-topic:nth-child(9) .thumbnail-div img{ /* Express Image */
-        height: auto;
-        transform: translateX(0) translateY(-35px);
-    }
-
-    .web-topic:nth-child(10) .thumbnail-div img{ /* Ruby Image */
-        height: 120%;
-        transform: translateY(-13px) translateX(-40px);
-    }
-
-    .web-topic:nth-child(11) .thumbnail-div img{ /* Django Image */
-        height: auto;
-        transform: translateY(-25px);
-    }
-
-    .web-topic:nth-child(12) .thumbnail-div img{ /* Flask Image */
-        height: auto;
-        transform: translateY(-5px);
-    }
-
-    .web-topic:nth-child(13) .thumbnail-div img{ /* SQL Image */
-        height: auto;
-        transform: translateX(0);
-    }
-
-    .web-topic:nth-child(16) .thumbnail-div img{ /* GraphQL Image */
-        height: auto;
-        transform: translateY(-35px);
-    }
-
-    .web-topic:nth-child(17) .thumbnail-div img{ /* OAuth Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(20) .thumbnail-div img{ /* WebSockets Image */
-        height: auto;
-        transform: translateY(-75px);
-    }
-
-    .web-topic:nth-child(22) .thumbnail-div img{ /* Accessibility Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(26) .thumbnail-div img{ /* Performance Optimiziation Image */
-        height: auto;
-        transform: translateY(-35px);
-    }
-
-    .web-topic:nth-child(27) .thumbnail-div img{ /* Corss-Browser Compatibility Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(28) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(30) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(37) .thumbnail-div img{ /* Web Accessibility */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(38) .thumbnail-div img{ /* CMS Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(39) .thumbnail-div img{ /* Web Analytics Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    /* End of Custom Images ////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div h4{
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
-    .topic-details-div h5{
-        font-size: 1em;
-        margin: 0 0 30px 0;
-    }
-
-    .web-topic:nth-child(28) h5{ /* Custom margin (between h5 and stars) for SEO web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(31) h5{ /* Custom margin (between h5 and stars) for Continuous Integration web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(37) h5{ /* Custom margin (between h5 and stars) for Web Accessibility Initiative (WAI) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(38) h5{ /* Custom margin (between h5 and stars) for Content Management Systems (CMS) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-
-    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
-
-    .star-rating-box{
-        display: flex;
-        flex-flow: row nowrap;
-        margin-bottom: 10px;
-    }
-
-    .star-border{
-        width: 17px;
-        height: 17px;
-    }
-        
-    .second-level-star{
-        width: 11px;
-        height: 11px;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-    }
-
-    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
-
-    /*Custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .web-topic:nth-child(2) .star-border:nth-child(4) .star-color-fill{ /* CSS star rating*/
-        top: -3px;
-        left: 7px;
-    }
-
-    .web-topic:nth-child(5) .star-border:nth-child(4) .star-color-fill{ /* Angular star rating*/
-        top: -3px;
-        left: 8px;
-    }
-
-    .web-topic:nth-child(7) .star-border:nth-child(4) .star-color-fill{ /* Vue star rating*/
-        top: -3px;
-        left: 7px;
-    }
-
-    .web-topic:nth-child(15) .star-color-fill{ /* REST APIs star rating*/
-        top: -1px;
-        left: 1px;
-    }
-
-    .web-topic:nth-child(17) .star-border:nth-child(4) .star-color-fill{ /* OAuth star rating*/
-        top: -3px;
-        left: 6px;
-    }
-
-    .web-topic:nth-child(18) .star-border:nth-child(4) .star-color-fill{ /* JSON star rating*/
-        top: -3px;
-        left: 6px;
-    }
-
-    .web-topic:nth-child(33) .star-color-fill{ /* Cloud Computing star rating */
-        top: -3px;
-        left: 4px;
-    }
-
-    /* End of custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div p{
-        color: gray;
-        font-size: .8em;
-        margin-bottom: 15px;
-    }
-
-    /* FOOTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .Footer-message{
-        padding: 20px 0;
+        grid-template-columns: 31.04% 31.04% 31.04%;
+        column-gap: 3.35%;
     }
 }
+@media(min-width: 912px) and (max-width: 1023px){
+    /* BANNER SECTION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen  and (min-width:412px) and (max-width:427px){ /*412px --- 427px---------------------------------------------------------------------------------------------------------------*/
-    .page-title h1{
-        font-size: 1.2em;
+    .banner-primary{
+        height: 50px;
     }
 
-    .modes-tab-buttons button{
-        padding-bottom: 0;
+    .banner-secondary{
+        height: 50px;
     }
 
-    .header-message h2{
-        font-size: 1.3em;
+    .banner-message{
+        transform: translateY(0);
     }
 
-    .header-message{
-        transform: translateY(8px);
-    }
-
-    .header-message p{
-        font-size: 1em;
-    }
-
-    .brand-primary{
-        height: 4vh;
-    }
-
-    .brand-secondary{
-        height: 4vh;
-    }
-
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-div{
-        flex-wrap: wrap;
-        border-radius: 10px;
-    }
-
-    .search-div span:nth-child(1){
-        width: 10%;
-        padding:0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .search-icon{
-        font-size: 0.9em;
-        transform: translateY(3px);
+    .banner-custom-container{
+        padding-bottom: 20px;
     }
     
+    /* SEARCH BAR//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
     .search-field{
-        width: 90%;
-        padding: 15px 0  10px 0;
-        position: relative;
-    }
-
-    .search-field:placeholder-shown{
-        font-size: 0.9em;
-    }
-
-    .search-field:focus{
-        font-size: 0.9em;
+        width: 65%;
     }
 
     .search-options{
-        width: 50%;
-        border-top: 1px solid #DDDDDD;
-        padding: 5px 0 5px 10px;
-    }
-
-    .search-options::before{
-        width: 0;
-        height: 0;
-    }
-
-    .search-sort-option{
-        border-right: 1px solid #DDDDDD;
-    }
-
-    .search-options p:nth-child(1){
-        width: 100%;
-        font-size: 0.6em;
-        margin-bottom: 0;
+        width: 20%;
     }
 
     .search-options p:nth-child(2){
-        font-size: 0.9em;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-        transform: translateY(0);
+        width: 82%;
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
-    .web-topic h3{
-        font-size: 1.2em;
-        top: -13%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 160px;
-    }
-
     .web-topics{
-        column-gap: 0;
-        row-gap:30px ;
+        grid-template-columns: minmax(31.043%, 33.333%) minmax(31.043%, 33.333%) minmax(31.043%, 33.333%);
+        column-gap: 2.29%;
     }
-
-    .web-topic{
-        width: 100%;
-    }
-
-    .thumbnail-div{
-        height: 150px;
-    }
-
-    .thumbnail-div img{
-        width: 100%;
-    }
-
-    /* Start of Custom images////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic:nth-child(1) .thumbnail-div img{ /* HTML Image */
-        height: auto;
-        transform: translateY(-15px);
-    }  
-
-    .web-topic:nth-child(2) .thumbnail-div img{ /* CSS Image */
-        height: auto;
-        transform: translateY(-20px);
-    }  
-
-    .web-topic:nth-child(3) .thumbnail-div img{ /* JavaScript Image */
-        height: 130%;
-        transform: translateY(-20px);
-    }   
-
-    .web-topic:nth-child(5) .thumbnail-div img{ /* Angular Image */
-        transform: translateX(0px);
-    }
-
-    .web-topic:nth-child(6) .thumbnail-div img{ /* React Image */
-        height: auto;
-        transform: translateX(0) translateY(-20px);
-    }
-
-    .web-topic:nth-child(7) .thumbnail-div img{ /* Vue Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(8) .thumbnail-div img{ /* Node Image */
-        height: auto;
-        transform: translateX(0) translateY(-40px);
-    }
-
-    .web-topic:nth-child(9) .thumbnail-div img{ /* Express Image */
-        height: auto;
-        transform: translateX(0) translateY(-35px);
-    }
-
-    .web-topic:nth-child(10) .thumbnail-div img{ /* Ruby Image */
-        height: 120%;
-        transform: translateY(-13px) translateX(-40px);
-    }
-
-    .web-topic:nth-child(11) .thumbnail-div img{ /* Django Image */
-        height: auto;
-        transform: translateY(-25px);
-    }
-
-    .web-topic:nth-child(12) .thumbnail-div img{ /* Flask Image */
-        height: auto;
-        transform: translateY(-5px);
-    }
-
-    .web-topic:nth-child(13) .thumbnail-div img{ /* SQL Image */
-        height: auto;
-        transform: translateX(0);
-    }
-
-    .web-topic:nth-child(16) .thumbnail-div img{ /* GraphQL Image */
-        height: auto;
-        transform: translateY(-35px);
-    }
-
-    .web-topic:nth-child(17) .thumbnail-div img{ /* OAuth Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(20) .thumbnail-div img{ /* WebSockets Image */
-        height: auto;
-        transform: translateY(-75px);
-    }
-
-    .web-topic:nth-child(22) .thumbnail-div img{ /* Accessibility Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(26) .thumbnail-div img{ /* Performance Optimiziation Image */
-        height: auto;
-        transform: translateY(-35px);
-    }
-
-    .web-topic:nth-child(27) .thumbnail-div img{ /* Corss-Browser Compatibility Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(28) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(30) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(37) .thumbnail-div img{ /* Web Accessibility */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(38) .thumbnail-div img{ /* CMS Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(39) .thumbnail-div img{ /* Web Analytics Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    /* End of Custom Images ////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div h4{
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
-    .topic-details-div h5{
-        font-size: 1em;
-        margin: 0 0 30px 0;
-    }
-
-    .web-topic:nth-child(28) h5{ /* Custom margin (between h5 and stars) for SEO web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(31) h5{ /* Custom margin (between h5 and stars) for Continuous Integration web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(37) h5{ /* Custom margin (between h5 and stars) for Web Accessibility Initiative (WAI) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(38) h5{ /* Custom margin (between h5 and stars) for Content Management Systems (CMS) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-
-    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
-
-    .star-rating-box{
-        display: flex;
-        flex-flow: row nowrap;
-        margin-bottom: 10px;
-    }
-
-    .star-border{
-        width: 17px;
-        height: 17px;
-    }
-        
-    .second-level-star{
-        width: 11px;
-        height: 11px;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-    }
-
-    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
-
-    /*Custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .web-topic:nth-child(2) .star-border:nth-child(4) .star-color-fill{ /* CSS star rating*/
-        top: -3px;
-        left: 7px;
-    }
-
-    .web-topic:nth-child(5) .star-border:nth-child(4) .star-color-fill{ /* Angular star rating*/
-        top: -3px;
-        left: 8px;
-    }
-
-    .web-topic:nth-child(7) .star-border:nth-child(4) .star-color-fill{ /* Vue star rating*/
-        top: -3px;
-        left: 7px;
-    }
-
-    .web-topic:nth-child(15) .star-color-fill{ /* REST APIs star rating*/
-        top: -1px;
-        left: 1px;
-    }
-
-    .web-topic:nth-child(17) .star-border:nth-child(4) .star-color-fill{ /* OAuth star rating*/
-        top: -3px;
-        left: 6px;
-    }
-
-    .web-topic:nth-child(18) .star-border:nth-child(4) .star-color-fill{ /* JSON star rating*/
-        top: -3px;
-        left: 6px;
-    }
-
-    .web-topic:nth-child(33) .star-color-fill{ /* Cloud Computing star rating */
-        top: -3px;
-        left: 4px;
-    }
-
-    /* End of custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div p{
-        color: gray;
-        font-size: .8em;
-        margin-bottom: 15px;
-    }
-
-    /* FOOTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .Footer-message{
-        padding: 20px 0;
-    }
-
 }
+@media(min-width: 1024px) and (max-width: 1279px){
+    /* BANNER SECTION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen  and (min-width:428px) and (max-width:767px){/*428px --- 767px-----------------------------------------------------------------------------------------------------------------*/
-    .page-title h1{
-        font-size: 1.2em;
+    .banner-primary{
+        height: 50px;
     }
 
-    .modes-tab-buttons button{
-        padding-bottom: 0;
+    .banner-secondary{
+        height: 50px;
     }
 
-    .header-message h2{
-        font-size: 1.3em;
+    .banner-message{
+        transform: translateY(0);
     }
 
-    .header-message{
-        transform: translateY(8px);
-    }
-
-    .header-message p{
-        font-size: 1em;
-    }
-
-    .brand-primary{
-        height: 4vh;
-    }
-
-    .brand-secondary{
-        height: 4vh;
-    }
-
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-div{
-        flex-wrap: wrap;
-        border-radius: 10px;
-    }
-
-    .search-div span:nth-child(1){
-        width: 10%;
-        padding:0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .search-icon{
-        font-size: 0.9em;
-        transform: translateY(3px);
+    .banner-custom-container{
+        padding-bottom: 20px;
     }
     
+    /* SEARCH BAR//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
     .search-field{
-        width: 90%;
-        padding: 15px 0  10px 0;
-        position: relative;
-    }
-
-    .search-field:placeholder-shown{
-        font-size: 0.9em;
-    }
-
-    .search-field:focus{
-        font-size: 0.9em;
+        width: 65%;
     }
 
     .search-options{
-        width: 50%;
-        border-top: 1px solid #DDDDDD;
-        padding: 5px 0 5px 10px;
-    }
-
-    .search-options::before{
-        width: 0;
-        height: 0;
-    }
-
-    .search-sort-option{
-        border-right: 1px solid #DDDDDD;
-    }
-
-    .search-options p:nth-child(1){
-        width: 100%;
-        font-size: 0.6em;
-        margin-bottom: 0;
+        width: 20%;
     }
 
     .search-options p:nth-child(2){
-        font-size: 0.9em;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-        transform: translateY(0);
+        width: 82%;
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic h3{
-        font-size: 1.2em;
-        top: -15%
-    }
-
-    .web-topics-box-parent{
-        margin-top: 180px;
-    }
 
     .web-topics{
-        column-gap: 0;
-        row-gap:30px ;
+        grid-template-columns: minmax(22.71%, 25%) minmax(22.71%, 25%) minmax(22.71%, 25%) minmax(22.71%, 25%);
+        column-gap: 2.29%;
     }
-
-    .web-topic{
-        width: 100%;
-    }
-
-    .thumbnail-div{
-        height: 150px;
-    }
-
-    .thumbnail-div img{
-        width: 100%;
-    }
-
-    /* Start of Custom images////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic:nth-child(1) .thumbnail-div img{ /* HTML Image */
-        height: auto;
-        transform: translateY(-15px);
-    }  
-
-    .web-topic:nth-child(2) .thumbnail-div img{ /* CSS Image */
-        height: auto;
-        transform: translateY(-20px);
-    }  
-
-    .web-topic:nth-child(3) .thumbnail-div img{ /* JavaScript Image */
-        height: 130%;
-        transform: translateY(-20px);
-    }   
-
-    .web-topic:nth-child(5) .thumbnail-div img{ /* Angular Image */
-        transform: translateX(0px);
-    }
-
-    .web-topic:nth-child(6) .thumbnail-div img{ /* React Image */
-        height: auto;
-        transform: translateX(0) translateY(-20px);
-    }
-
-    .web-topic:nth-child(7) .thumbnail-div img{ /* Vue Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(8) .thumbnail-div img{ /* Node Image */
-        height: auto;
-        transform: translateX(0) translateY(-40px);
-    }
-
-    .web-topic:nth-child(9) .thumbnail-div img{ /* Express Image */
-        height: auto;
-        transform: translateX(0) translateY(-35px);
-    }
-
-    .web-topic:nth-child(10) .thumbnail-div img{ /* Ruby Image */
-        height: 120%;
-        transform: translateY(-13px) translateX(-40px);
-    }
-
-    .web-topic:nth-child(11) .thumbnail-div img{ /* Django Image */
-        height: auto;
-        transform: translateY(-25px);
-    }
-
-    .web-topic:nth-child(12) .thumbnail-div img{ /* Flask Image */
-        height: auto;
-        transform: translateY(-5px);
-    }
-
-    .web-topic:nth-child(13) .thumbnail-div img{ /* SQL Image */
-        height: auto;
-        transform: translateX(0);
-    }
-
-    .web-topic:nth-child(16) .thumbnail-div img{ /* GraphQL Image */
-        height: auto;
-        transform: translateY(-35px);
-    }
-
-    .web-topic:nth-child(17) .thumbnail-div img{ /* OAuth Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(20) .thumbnail-div img{ /* WebSockets Image */
-        height: auto;
-        transform: translateY(-75px);
-    }
-
-    .web-topic:nth-child(22) .thumbnail-div img{ /* Accessibility Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(26) .thumbnail-div img{ /* Performance Optimiziation Image */
-        height: auto;
-        transform: translateY(-35px);
-    }
-
-    .web-topic:nth-child(27) .thumbnail-div img{ /* Corss-Browser Compatibility Image */
-        height: auto;
-        transform: translateY(-20px);
-    }
-
-    .web-topic:nth-child(28) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(30) .thumbnail-div img{ /* SEO Image */
-        height: auto;
-        transform: translateY(-30px);
-    }
-
-    .web-topic:nth-child(37) .thumbnail-div img{ /* Web Accessibility */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(38) .thumbnail-div img{ /* CMS Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    .web-topic:nth-child(39) .thumbnail-div img{ /* Web Analytics Image */
-        height: auto;
-        transform: translateY(-15px);
-    }
-
-    /* End of Custom Images ////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div h4{
-        font-size: 0.9em;
-        font-weight: 400;
-    }
-
-    .topic-details-div h5{
-        font-size: 1em;
-        margin: 0 0 30px 0;
-    }
-
-    .web-topic:nth-child(28) h5{ /* Custom margin (between h5 and stars) for SEO web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(31) h5{ /* Custom margin (between h5 and stars) for Continuous Integration web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(37) h5{ /* Custom margin (between h5 and stars) for Web Accessibility Initiative (WAI) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-    
-    .web-topic:nth-child(38) h5{ /* Custom margin (between h5 and stars) for Content Management Systems (CMS) web-topic div*/
-        margin: 0 0 30px 0;
-    }
-
-    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
-
-    .star-rating-box{
-        display: flex;
-        flex-flow: row nowrap;
-        margin-bottom: 10px;
-    }
-
-    .star-border{
-        width: 17px;
-        height: 17px;
-    }
-        
-    .second-level-star{
-        width: 11px;
-        height: 11px;
-        position: absolute;
-        top: 3px;
-        left: 3px;
-    }
-
-    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
-
-    /*Custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .web-topic:nth-child(2) .star-border:nth-child(4) .star-color-fill{ /* CSS star rating*/
-        top: -3px;
-        left: 7px;
-    }
-
-    .web-topic:nth-child(5) .star-border:nth-child(4) .star-color-fill{ /* Angular star rating*/
-        top: -3px;
-        left: 8px;
-    }
-
-    .web-topic:nth-child(7) .star-border:nth-child(4) .star-color-fill{ /* Vue star rating*/
-        top: -3px;
-        left: 7px;
-    }
-
-    .web-topic:nth-child(15) .star-color-fill{ /* REST APIs star rating*/
-        top: -1px;
-        left: 1px;
-    }
-
-    .web-topic:nth-child(17) .star-border:nth-child(4) .star-color-fill{ /* OAuth star rating*/
-        top: -3px;
-        left: 6px;
-    }
-
-    .web-topic:nth-child(18) .star-border:nth-child(4) .star-color-fill{ /* JSON star rating*/
-        top: -3px;
-        left: 6px;
-    }
-
-    .web-topic:nth-child(33) .star-color-fill{ /* Cloud Computing star rating */
-        top: -3px;
-        left: 4px;
-    }
-
-    /* End of custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
-
-    .topic-details-div p{
-        color: gray;
-        font-size: .8em;
-        margin-bottom: 15px;
-    }
-
-    /* FOOTER///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-    .Footer-message{
-        padding: 20px 0;
-    }
-
 }
-
-@media screen  and (min-width:768px) and (max-width:799px){/*768px --- 799px------------------------------------------------------------------------------------------------------------------*/
-    .header-message{
-        transform: translateY(3px);
-    }
-
-    .brand-primary{
-        height: 5.5vh;
-    }
-
-    .brand-secondary{
-        height: 5.5vh;
-    }
-    
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-field{
-        width: 60%;
-    }
-
-    .search-div span:nth-child(1){
-        width: 7%;
-    }
-
-    .search-options{
-        width: 16.5%;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-    }
-
+@media(min-width: 1280px) and (max-width:1439px){
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic h3{
-        font-size: 1.5em;
-        top: -12%;
+    .web-topics{
+        grid-template-columns: minmax(22.71%, 25%) minmax(22.71%, 25%) minmax(22.71%, 25%) minmax(22.71%, 25%);
+        column-gap: 2.29%;
     }
-
-    .web-topics-box-parent{
-        margin-top: 140px;
-    }
-
-    /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-
 }
-
-@media screen  and (min-width:800px) and (max-width:819px){/*768px --- 819px------------------------------------------------------------------------------------------------------------------*/
-    .header-message{
-        transform: translateY(3px);
-    }
-
-    .brand-primary{
-        height: 5.5vh;
-    }
-
-    .brand-secondary{
-        height: 5.5vh;
-    }
-    
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-field{
-        width: 60%;
-    }
-
-    .search-div span:nth-child(1){
-        width: 7%;
-    }
-
-    .search-options{
-        width: 16.5%;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-    }
-
-    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic h3{
-        font-size: 1.5em;
-        top: -12%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 150px;
-    }
-
-    /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-}
-
-@media screen  and (min-width:820px) and (max-width:883px){/*820px --- 911px-------------------------------------------------------------------------------------------------------------------*/
-    .header-message{
-        transform: translateY(3px);
-    }
-
-    .brand-primary{
-        height: 5vh;
-    }
-
-    .brand-secondary{
-        height: 5vh;
-    }
-    
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-field{
-        width: 60%;
-    }
-
-    .search-div{
-        top: 37px
-    }
-
-    .search-div span:nth-child(1){
-        width: 7%;
-    }
-
-    .search-options{
-        width: 16.5%;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-    }
-
-    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic h3{
-        font-size: 1.5em;
-        top: -12%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 135px;
-    }
-
-    /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-}
-
-@media screen  and (min-width:884px) and (max-width:911px){/*820px --- 911px-------------------------------------------------------------------------------------------------------------------*/
-    .header-message{
-        transform: translateY(3px);
-    }
-
-    .brand-primary{
-        height: 5vh;
-    }
-
-    .brand-secondary{
-        height: 5vh;
-    }
-    
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-field{
-        width: 60%;
-    }
-
-    .search-div{
-        top: 37px
-    }
-
-    .search-div span:nth-child(1){
-        width: 7%;
-    }
-
-    .search-options{
-        width: 16.5%;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-    }
-
-    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic h3{
-        font-size: 1.5em;
-        top: -12%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 135px;
-    }
-
-    /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-}
-
-@media screen  and (min-width:912px) and (max-width:1023px){/*820px --- 1023px-------------------------------------------------------------------------------------------------------------------*/
-    .header-message{
-        transform: translateY(3px);
-    }
-
-    .brand-primary{
-        height: 5vh;
-    }
-
-    .brand-secondary{
-        height: 5vh;
-    }
-    
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    .search-div{
-        top: 3vh;
-    }
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-field{
-        width: 60%;
-    }
-
-    .search-div span:nth-child(1){
-        width: 7%;
-    }
-
-    .search-options{
-        width: 16.5%;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-    }
-
-    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic h3{
-        font-size: 1.5em;
-        top: -14%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 150px;
-    }
-
-    /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-}
-
-@media screen  and (min-width:1024px) and (max-width:1279px){/*1024px --- 1279px-------------------------------------------------------------------------------------------------------------------*/
-    .header-message{
-        transform: translateY(3px);
-    }
-
-    .brand-primary{
-        height: 80px;
-    }
-
-    .brand-secondary{
-        height: 80px;
-    }
-    
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    .search-div{
-        top: 40px;
-    }
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-field{
-        width: 60%;
-    }
-
-    .search-div span:nth-child(1){
-        width: 7%;
-    }
-
-    .search-options{
-        width: 16.5%;
-    }
-
-    .search-down-arrow{
-        font-size: 0.9em;
-    }
-
-    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic h3{
-        font-size: 1.5em;
-        top: -12%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 140px;
-    }
-
-    /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-}
-
-@media screen  and (min-width:1280px) and (max-width:1400px){/*1280 --- 1500------------------------------------------------------------------------------------------------------------------------*/
-    .header-message{
-        transform: translateY(-3px);
-    }
-
-    /* SEARCH BAR//////////////////////////////////////////////////////////////////// */
-
-    main{
-        margin-top: 15px;
-    }
-
-    .search-div{
-        top: 5vh;
-    }
-
-    .search-field{
-        width: 60%;
-    }
-
-    .search-div span:nth-child(1){
-        width: 7%;
-    }
-
-    .search-options{
-        width: 16.5%;
-    }
-
-    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-
-    .web-topic h3{
-        font-size: 1.7em;
-        top: -12%;
-    }
-
-    .web-topics-box-parent{
-        margin-top: 140px;
-    }
-
-    /* END of WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
-    
-}
-
-
-

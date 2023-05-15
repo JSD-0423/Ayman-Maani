@@ -5,1445 +5,1592 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project1</title>
-    <link rel="stylesheet" href="Assets/CSS/custom.css">
+    <link id="theme-link-details-page" rel="stylesheet" href="Assets/CSS/details-page.css">
+    <link id="theme-link-main-page" rel="stylesheet" href="Assets/CSS/custom.css">
     <link rel="stylesheet" href="Assets/CSS/responsive.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="modes-tab">
+            <div class="page-modes">
                 <div class="page-title">
-                    <h1>Web Topics</h1>
+                    <h1 id="page-title" tabindex="0">Web Topics</h1>
                 </div>
-                <div class="modes-tab-buttons">
-                    <button class="modes-buttons"><span><ion-icon class="moon mode-icon" name="moon-outline"></ion-icon></span> Dark Mode</button>
-                    <button class="modes-buttons"><span><ion-icon class="heart mode-icon" name="heart-outline"></ion-icon></span> Favourites</button>
+                <div class="page-modes-buttons">
+                    <input id="checkbox-input" type="checkbox">
+                    <label for="checkbox-input" id="dark-mode-label" class="modes-buttons" tabindex="0"><ion-icon id="moon" class="moon mode-icon" name="moon-outline"></ion-icon> Dark Mode</label>
+                    <button tabindex="0" type="button" class="modes-buttons"><ion-icon id="heart" class="heart mode-icon" name="heart-outline"></ion-icon> Favourites</button>
                 </div>
             </div>
         </div>
-        <section>
-            <div class="brand-logo-parent">
-                <div class="brand-primary"></div>
-                <div class="brand-secondary"></div>
-            </div>
-            <div class="container">
-                <div class="header-message">
+    </header>
+    <section class="banner-section">
+        <div class="banner">
+            <div class="banner-primary"></div>
+            <div class="banner-secondary"></div>
+            <div class="container banner-custom-container">
+                <div class="banner-message">
                     <h2>Welcome to our website!</h2>
                     <p>We have new design that's fresh, modern, and easy to use.</p>
                 </div>
-                <section class="search-section">
-                    <div class="search-div">
+            </div>
+        </div>
+    </section>
+    <main class="main-section">
+        <section id="web-topics-page" class="web-topics-page">
+            <section id="search-bar-section" class="search-section">
+                <div class="container search-custom-container">
+                    <div class="search-bar">
                         <span><ion-icon class="search-icon" name="search-outline"></ion-icon></span>
                         <input class="search-field" type="search" id="SearchField" placeholder="Search the website...">
-                        <div class="search-sort-option search-options">
-                            <p>Sort by :</p>
+                        <div tabindex="0" class="search-sort-option search-options">
+                            <p>Sort by:</p>
                             <p>Default</p>
                             <span><ion-icon class="search-down-arrow" name="chevron-down-outline"></ion-icon></span>
                         </div>
-                        <div class="search-filter-option search-options">
-                            <p>Filter by :</p>
+                        <div tabindex="0" class="search-filter-option search-options">
+                            <p>Filter by:</p>
                             <p>Default</p>
                             <span><ion-icon class="search-down-arrow" name="chevron-down-outline"></ion-icon></span>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
+            <div class="container main-custom-container">
+                <h3>"24" Web Topics Found</h3>
+                <div class="web-topics-box-parent">
+                    <div class="web-topics">
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/html.png" alt="Web Development Languages - HTML course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Languages</h4>
+                                    <h5>HTML</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Sarah Smith</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/css.webp" alt="Web Development Languages - CSS course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Languages</h4>
+                                    <h5>CSS</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: David Lee</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/javascript.jpg" alt="Web Development Languages - JavaScript course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Languages</h4>
+                                    <h5>JavaScript</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Emily Chen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/jquery.png" alt="Frontend Frameworks and Libraries - jQuery course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Frontend Frameworks and Libraries</h4>
+                                    <h5>jQuery</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: John Johnson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/angular.png" alt="Frontend Frameworks and Libraries - Angular course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Frontend Frameworks and Libraries</h4>
+                                    <h5>Angular</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Jessica Davis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/react.webp" alt="Frontend Frameworks and Libraries - React course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Frontend Frameworks and Libraries</h4>
+                                    <h5>React</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Daniel Brown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/vuejs.jpeg" alt="Frontend Frameworks and Libraries - Vue.js course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Frontend Frameworks and Libraries</h4>
+                                    <h5>Vue.js</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Ava Jones</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/nodejs.webp" alt="Backend Frameworks and Libraries - Node.js course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Backend Frameworks and Libraries</h4>
+                                    <h5>Node.js</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Michael Kim</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/expressjs.webp" alt="Backend Frameworks and Libraries - Express.js course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Backend Frameworks and Libraries</h4>
+                                    <h5>Express.js</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Sophia Rodriguez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/ruby.jpeg" alt="Backend Frameworks and Libraries - Ruby on Rails course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Backend Frameworks and Libraries</h4>
+                                    <h5>Ruby on Rails</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: William Lee</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/django.jpeg" alt="Backend Frameworks and Libraries - Django course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Backend Frameworks and Libraries</h4>
+                                    <h5>Django</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Olivia Martinez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/flask.webp" alt="Backend Frameworks and Libraries - Flask course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Backend Frameworks and Libraries</h4>
+                                    <h5>Flask</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Ethan Thompson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/sql.png" alt="Databases and APIs - SQL course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Databases and APIs</h4>
+                                    <h5>SQL</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Madison Davis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/nosql.png" alt="Databases and APIs - NoSQL course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Databases and APIs</h4>
+                                    <h5>NoSQL</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Isabella Wilson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img  src="Assets/images/topics-thumbnails/restapi.jpeg" alt="Databases and APIs - REST APIs course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Databases and APIs</h4>
+                                    <h5>REST APIs</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Jacob Garcia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/graphql.png" alt="Databases and APIs - GraphQL course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Databases and APIs</h4>
+                                    <h5>GraphQL</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Mia Brown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/oauth.png" alt="Web Development Concepts and Technology  - OAuth course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>OAuth</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Evelyn Nguyen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/json.png" alt="Web Development Concepts and Technology  - JSON course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>JSON</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Liam Hernandez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/ajax.gif" alt="Web Development Concepts and Technology  - AJAX course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>AJAX</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Avery Perez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img  src="Assets/images/topics-thumbnails/websockets.png" alt="Web Development Concepts and Technology  - Websockets course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Websockets</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Victoria Kim</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/responsive.gif" alt="Web Development Concepts and Technology  - Resposive Design course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Resposive Design</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Ryan Jones</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/accessibility.png" alt="Web Development Concepts and Technology  - Accessibility course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Accessibility</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Samantha Martin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img  src="Assets/images/topics-thumbnails/ux.jpeg" alt="Web Development Concepts and Technology  - User Experience UX course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>User Experience (UX)</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Luke Davis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/ui.png" alt="Web Development Concepts and Technology  - User Interface UI course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>User Interface (UI)</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Grace Wilson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/design-systems.jpeg" alt="Web Development Concepts and Technology  - Design Systems course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>User Interface (UI)</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Noah Martinez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/performance.png" alt="Web Development Concepts and Technology  - Performance Optimization course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Performance Optimization</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Chloe Taylor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/cross-browser.jpeg" alt="Web Development Concepts and Technology  - Cross-Browser Compatibility course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Cross-Browser Compatibility</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: David Lee</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/seo.jpeg" alt="Web Development Concepts and Technology  - Search Engine Optimization (SEO) course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Search Engine Optimization (SEO)</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Emily Kim</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/web-security.jpeg" alt="Web Development Concepts and Technology  - Web Security course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Web Security</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Avery Perez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/testing.jpeg" alt="Web Development Concepts and Technology  - Testing and Debugging course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Testing and Debugging</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Avery Perez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/ci-cd.jpeg" alt="Web Development Concepts and Technology  - Continuous Integration/Continuous... course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Continuous Integration/Continuous something</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Madison Davis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/devops.png" alt="Web Development Concepts and Technology  - DevOps course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>DevOps</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Isabella Wilson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img src="Assets/images/topics-thumbnails/cloud.jpeg" alt="Web Development Concepts and Technology  - Cloud Computing course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Cloud Computing</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Jacob Garcia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/docker.png" alt="Web Development Concepts and Technology  - Docker course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Docker</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Mia Brown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/microservices.png" alt="Web Development Concepts and Technology  - Microservices course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Microservices</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Evelyn Nguyen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/pwa.png" alt="Web Development Concepts and Technology  - Progressive Web Apps (PWA) course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Progressive Web Apps (PWA)</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Liam Hernandez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/wai.jpeg" alt="Web Development Concepts and Technology  - Web Accessibility Initiative (WAI) course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Web Accessibility Initiative (WAI)</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Liam Hernandez</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/cms.png" alt="Web Development Concepts and Technology  - Content Management Systems (CMS) course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Content Management Systems (CMS)</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Victoria Kim</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="web-topic-card" tabindex="0">
+                            <div class="card-thumbnail">
+                                <img class="full-width" src="Assets/images/topics-thumbnails/analytics.png" alt="Web Development Concepts and Technology  - Web Analytics course">
+                            </div>
+                            <div class="container card-custom-container">
+                                <div class="card-details">
+                                    <h4>Web Development Concepts and Technology</h4>
+                                    <h5>Web Analytics</h5>
+                                    <div class="star-rating-box">
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                            </div>
+                                        </div>
+                                        <div class="star-border">
+                                            <div class="second-level-star">
+                                                <div class="star-color-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Author: Ryan Jones</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
             </div>
         </section>
-    </header>
-    <main>
-        <div class="container">
-            
-            <div class="web-topics-box-parent">
-                <div class="web-topics">
-                    <div class="web-topic">
-                        <h3>"24" Web topics Found</h3>
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/html.png" alt="Web Development Languages - HTML course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Languages</h4>
-                                <h5>HTML</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Sarah Smith</p>
-                            </div>
+        <section id="details-page" class="details-page">
+            <div class="course-details-box">
+                <div class="details-page-card">
+                    <div class="details-page-card-thumbnail">
+                        <img src="Assets/images/topics-thumbnails/javascript.jpg" alt="html course">
+                    </div>
+                    <div class="container details-page-card-custom-container">
+                        <h4><span>HTML</span> by <a href="#">Sarah Smith</a></h4>
+                        <div class="add-to-favourites-box">
+                            <p>Interested about this topic?</p>
+                            <button>Add to Favourites <ion-icon id="details-page-heart" class="details-page-heart" name="heart-outline"></ion-icon></button>
+                            <h6>Unlimited Credits</h6>
                         </div>
                     </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/css.webp" alt="Web Development Languages - CSS course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Languages</h4>
-                                <h5>CSS</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: David Lee</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/javascript.jpg" alt="Web Development Languages - JavaScript course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Languages</h4>
-                                <h5>JavaScript</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Emily Chen</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/jquery.png" alt="Frontend Frameworks and Libraries - jQuery course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Frontend Frameworks and Libraries</h4>
-                                <h5>jQuery</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: John Johnson</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/angular.png" alt="Frontend Frameworks and Libraries - Angular course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Frontend Frameworks and Libraries</h4>
-                                <h5>Angular</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Jessica Davis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/react.webp" alt="Frontend Frameworks and Libraries - React course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Frontend Frameworks and Libraries</h4>
-                                <h5>React</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Daniel Brown</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/vuejs.jpeg" alt="Frontend Frameworks and Libraries - Vue.js course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Frontend Frameworks and Libraries</h4>
-                                <h5>Vue.js</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Ava Jones</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/nodejs.webp" alt="Backend Frameworks and Libraries - Node.js course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Backend Frameworks and Libraries</h4>
-                                <h5>Node.js</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Michael Kim</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/expressjs.webp" alt="Backend Frameworks and Libraries - Express.js course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Backend Frameworks and Libraries</h4>
-                                <h5>Express.js</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Sophia Rodriguez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/ruby.jpeg" alt="Backend Frameworks and Libraries - Ruby on Rails course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Backend Frameworks and Libraries</h4>
-                                <h5>Ruby on Rails</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: William Lee</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/django.jpeg" alt="Backend Frameworks and Libraries - Django course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Backend Frameworks and Libraries</h4>
-                                <h5>Django</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Olivia Martinez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/flask.webp" alt="Backend Frameworks and Libraries - Flask course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Backend Frameworks and Libraries</h4>
-                                <h5>Flask</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Ethan Thompson</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/sql.png" alt="Databases and APIs - SQL course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Databases and APIs</h4>
-                                <h5>SQL</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Madison Davis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/nosql.png" alt="Databases and APIs - NoSQL course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Databases and APIs</h4>
-                                <h5>NoSQL</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Isabella Wilson</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img  src="Assets/images/topics-thumbnails/restapi.jpeg" alt="Databases and APIs - REST APIs course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Databases and APIs</h4>
-                                <h5>REST APIs</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Jacob Garcia</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/graphql.png" alt="Databases and APIs - GraphQL course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Databases and APIs</h4>
-                                <h5>GraphQL</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Mia Brown</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/oauth.png" alt="Web Development Concepts and T...  - OAuth course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>OAuth</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Evelyn Nguyen</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/json.png" alt="Web Development Concepts and T...  - JSON course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>JSON</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Liam Hernandez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/ajax.gif" alt="Web Development Concepts and T...  - AJAX course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>AJAX</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Avery Perez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img  src="Assets/images/topics-thumbnails/websockets.png" alt="Web Development Concepts and T...  - Websockets course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Websockets</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Victoria Kim</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/responsive.gif" alt="Web Development Concepts and T...  - Resposive Design course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Resposive Design</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Ryan Jones</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/accessibility.png" alt="Web Development Concepts and T...  - Accessibility course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Accessibility</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Samantha Martin</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img  src="Assets/images/topics-thumbnails/ux.jpeg" alt="Web Development Concepts and T...  - User Experience UX course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>User Experience (UX)</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Luke Davis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/ui.png" alt="Web Development Concepts and T...  - User Interface UI course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>User Interface (UI)</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Grace Wilson</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/design-systems.jpeg" alt="Web Development Concepts and T...  - Design Systems course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>User Interface (UI)</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Noah Martinez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/performance.png" alt="Web Development Concepts and T...  - Performance Optimization course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Performance Optimization</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Chloe Taylor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/cross-browser.jpeg" alt="Web Development Concepts and T...  - Cross-Browser Compatibility course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Cross-Browser Compatibility</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: David Lee</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/seo.jpeg" alt="Web Development Concepts and T...  - Search Engine Optimization (SEO) course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Search Engine Optimization (SEO)</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Emily Kim</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/web-security.jpeg" alt="Web Development Concepts and T...  - Web Security course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Web Security</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Avery Perez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/testing.jpeg" alt="Web Development Concepts and T...  - Testing and Debugging course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Testing and Debugging</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Avery Perez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/ci-cd.jpeg" alt="Web Development Concepts and T...  - Continuous Integration/Continuous... course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Continuous Integration/Continuous...</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Madison Davis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/devops.png" alt="Web Development Concepts and T...  - DevOps course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>DevOps</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Isabella Wilson</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img src="Assets/images/topics-thumbnails/cloud.jpeg" alt="Web Development Concepts and T...  - Cloud Computing course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Cloud Computing</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Jacob Garcia</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/docker.png" alt="Web Development Concepts and T...  - Docker course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Docker</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Mia Brown</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/microservices.png" alt="Web Development Concepts and T...  - Microservices course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Microservices</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Evelyn Nguyen</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/pwa.png" alt="Web Development Concepts and T...  - Progressive Web Apps (PWA) course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Progressive Web Apps (PWA)</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Liam Hernandez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/wai.jpeg" alt="Web Development Concepts and T...  - Web Accessibility Initiative (WAI) course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Web Accessibility Initiative (WAI)</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Liam Hernandez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/cms.png" alt="Web Development Concepts and T...  - Content Management Systems (CMS) course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Content Management Systems (CMS)</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Victoria Kim</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="web-topic">
-                        <div class="thumbnail-div">
-                            <img class="full-width" src="Assets/images/topics-thumbnails/analytics.png" alt="Web Development Concepts and T...  - Web Analytics course">
-                        </div>
-                        <div class="container">
-                            <div class="topic-details-div">
-                                <h4>Web Development Concepts and T...</h4>
-                                <h5>Web Analytics</h5>
-                                <div class="star-rating-box">
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                        </div>
-                                    </div>
-                                    <div class="star-border">
-                                        <div class="second-level-star">
-                                            <div class="star-color-fill"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Author: Ryan Jones</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="last-topic" class="web-topic"></div> <!-- this is to prevent topics from getting centered in XXlg screens -->
                 </div>
-           </div>
-        </div>
+                <div class="details-page-container">
+                    <div class="course-details">
+                        <h4>Web Development Languages</h4>
+                        <h5>HTML</h5>
+                        <div class="star-rating-box">
+                            <div class="star-border">
+                                <div class="second-level-star">
+                                </div>
+                            </div>
+                            <div class="star-border">
+                                <div class="second-level-star">
+                                </div>
+                            </div>
+                            <div class="star-border">
+                                <div class="second-level-star">
+                                </div>
+                            </div>
+                            <div class="star-border">
+                                <div class="second-level-star">
+                                </div>
+                            </div>
+                            <div class="star-border">
+                                <div class="second-level-star">
+                                    <div class="star-color-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages and other information that can be displayed in a web browser. It provides a structure for content and defines how it should be displayed on a web page, including text, images, and multimedia. HTML is essintial for creating static web pages and is a foundational technology for the World Wide Web.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="details-page-container">
+                <div class="course-sub-topics">
+                    <div class="course-sub-topic">
+                    <h2>HTML Sub Topics</h5>
+                    </div>
+                    <div class="course-sub-topic">
+                        <span><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon></span>
+                        <p>HTML syntax and structure</p>
+                    </div>
+                    <div class="course-sub-topic">
+                        <span><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon></span>
+                        <p>HTML  elemnts and attributes</p>
+                    </div>
+                    <div class="course-sub-topic">
+                        <span><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon></span>
+                        <p>HTML  forms and input elemnts</p>
+                    </div>
+                    <div class="course-sub-topic">
+                        <span><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon></span>
+                        <p>HTML  tables and lists</p>
+                    </div>
+                    <div class="course-sub-topic">
+                        <span><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon></span>
+                        <p>HTML multimedia elemnts (audio, video, images)</p>
+                    </div>
+                    <div class="course-sub-topic">
+                        <span><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon></span>
+                        <p>HTML accessibility and semantic markup</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="Footer-message">
             <h6>Developed with <span><ion-icon class="footer-heart" name="heart"></ion-icon></span> <span class="copyright">&copy</span> 2023</h6>
         </div>
     </footer>
+    <section class=" favourites-section" id="favourites-section">
+        <div class="container">
+            <div class="favourites-items">
+                <h3>My Favourite Topics</h3>
+                <div class="favourites-item">
+                    <div class="favourite-card-thumbnail">
+                        <img src="Assets/images/topics-thumbnails/react.webp" alt="react course">
+                    </div>
+                    <h5>React</h5>
+                    <div class="star-rating-box">
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                                <div class="star-color-fill-favourites"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="favourites-item">
+                    <div class="favourite-card-thumbnail">
+                        <img src="Assets/images/topics-thumbnails/cloud.jpeg" alt="react course">
+                    </div>
+                    <h5>Cloud Computing</h5>
+                    <div class="star-rating-box">
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                                <div class="star-color-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="Assets/JS/main.js"></script>

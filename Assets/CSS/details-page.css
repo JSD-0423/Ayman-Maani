@@ -1,0 +1,148 @@
+.details-page{
+    width: 100%;
+    transition: all ease-in .5s;
+    margin-right: -100%;
+    opacity: 0;
+    height: fit-content;
+}
+
+.course-details-box{
+    background-color: var(--body-text);
+    position: relative;
+}
+
+.details-page-container{
+    padding:0 43.5% 0 19.29%;
+}
+
+.course-details{
+    padding: 30px 0;
+}
+
+.course-details h4{
+    color: var(--brand-secondary);
+    font-weight: 400;
+}
+
+.course-details h5{
+    color: var(--bg_default);
+    font-size: 1.5rem;
+}
+
+.course-details .star-color-fill{
+    background-color: var(--body-text);
+}
+
+.course-details .star-rating-box{
+    margin-bottom: 20px;
+}
+
+.details-page-container p{
+    color: var(--bg_default);
+    font-size:1.01rem;
+}
+
+/* course card ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.details-page-card{
+    background-color:var(--bg_default);
+    width: 320px;
+    position: absolute;
+    top: 30px;  
+    right:277px;
+    padding: 2px;
+    box-shadow: 0px 0px 1px 0px rgb(0, 0, 0);
+}
+
+.details-page-card-thumbnail{
+    width: 100%;
+    height: 200px;
+}
+
+.details-page-card-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.details-page-card-custom-container{
+    padding-bottom: 4.5%;
+}
+
+.details-page-card-custom-container h4{
+    padding: 20px 0 11px 0 ;
+}
+
+.details-page-card-custom-container h4 a{
+    color: var(--brand-primary);
+}
+
+.add-to-favourites-box{
+    padding: 20px 20px 10px 20px;
+    /* margin-bottom: 15px; */
+    border: 1px solid var( --lines-color);
+}
+
+.add-to-favourites-box button{
+    margin: 10px 0;
+    width: 100%;
+    padding:3px 0 17px 0;
+    background-color: var(--brand-secondary);
+    color:var(--bg_body);
+    border: 0;
+    font-size: 1.25rem;
+    text-align: center;
+    box-shadow: 0px 0px 1px 0px rgb(0, 0, 0);
+}
+
+.details-page-heart{
+    transform: translateY(10px);
+    padding-left: 8px;
+    font-size: 2rem;
+}
+
+.add-to-favourites-box h6{
+    color: gray;
+    font-size: .8rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* course sub topics///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.course-sub-topics{
+    border: 1px solid var(--lines-color);
+    border-radius: 5px;
+    background-color: var(--bg_default);
+    margin-top: 30px;
+}
+
+.course-sub-topic{
+    display: flex;
+    border-bottom: 1px solid var(--lines-color);
+}
+
+
+
+.course-sub-topic:nth-child(7){
+    /* border-bottom: 1px solid var(--lines-color); */
+    border: 0;
+}
+
+.details-page-container .course-sub-topics .course-sub-topic h2{
+    padding: 15px 0 15px 30px;
+    color: var(--body-text);
+}
+
+.details-page-container .course-sub-topics .course-sub-topic p {
+    padding: 15px 0 15px 0;
+    color: var(--body-text);
+    font-size: 1rem;
+}
+
+.course-sub-topic span{
+    font-size: 1.5rem;
+    padding: 15px 15px 0 30px;
+    color: var(--brand-secondary);
+}
+
