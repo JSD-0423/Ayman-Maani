@@ -22,8 +22,7 @@
 }
 
 .container{
-    padding-inline:4%; /*58px*/
-    /* overflow: hidden; */
+    padding-inline:4%;
 }
 
 body{
@@ -176,21 +175,23 @@ header{
     border-radius: 10px;
     background-color: var(--bg_default);
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.23);
-    overflow: hidden;
+    position: relative;
 }
 
 .search-field{
     width: 94%;
     background-color: transparent;
-    padding: 12.9px 0; 
+    padding: 12.9px 0 12.9px 40px; 
     border: 0;
+    color: var(--body-text);
 }
 
 
 .search-field:placeholder-shown{
     font-family: Nunito-Sans;
     font-size: 1em;
-    padding-left: 10px;
+    padding-left: 40px;
+    color: var(--body-text);
 }
 
 
@@ -198,14 +199,19 @@ header{
     font-family: Nunito-Sans;
     outline-width: 1px;
     font-size: 1em;
+    color: var(--body-text);
+    outline-color: var(--body-text);
 }
 
 .search-bar span:nth-child(1){
-    padding:15px 3px 0 11px;
+    position: absolute;
+    top: 15px;
+    left: 11px; 
 }
 
 .search-icon{
     font-size: 1rem;
+    color: var(--body-text);
 }
 
 .search-options{
@@ -214,6 +220,7 @@ header{
     width: 18%;
     padding: 0 0 0 13px;
     border-left: 2px solid var(--lines-color);
+    cursor: pointer;
 }
 
 .search-options p:nth-child(1){
@@ -232,6 +239,7 @@ header{
 .search-down-arrow{
     font-size: .8rem;
     padding-bottom:1px;
+    color: var(--body-text);
 }
 
 /* WEB TOPICS COURSES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -285,6 +293,7 @@ main{
     width: 100%;
     height: 134.047px;
     object-fit: cover;
+    background-color: var(--body-text);
 }
 
 

@@ -27,8 +27,6 @@ console.log(window.visualViewport.width)
 // TOGGLE ON AND OFF SMALL ICONS FOR FAVORITES BUTTONS IN HEADER ----------------------------------------------------------------------------------------------------->
 
 if(currentScreenSize>=768){
-    modesButtons[0].innerHTML=`<ion-icon id="moon" class="moon mode-icon" name="moon-outline"></ion-icon> Dark Mode`;
-    modesButtons[1].innerHTML=`<ion-icon id="heart" class="heart mode-icon" name="heart-outline"></ion-icon> Favourites`;
     modesButtons[1].addEventListener("mouseover",addRedHeartLargeScreens);
     modesButtons[1].addEventListener("mouseleave", removeRedheartLargeScreens);
 }else{
@@ -119,21 +117,34 @@ modesButtons[1].addEventListener("click", ()=>{
 
 // CONTROL ANIMATION FOR SWITCHING BACK AND FORTH BETWEEN DETAILS PAGE AND THE MAIN PAGE-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+const webTopicBox = document.getElementById("web-topics");
 const webTopicCards = document.querySelectorAll(".web-topic-card");
 const webTopicsPage = document.getElementById("web-topics-page");
 const detailsPage = document.getElementById("details-page");
+const detailsPageCardContianer = document.getElementById("details-page-card-contianer");
+const detailsPageCard = document.getElementById("details-page-card");
 const searchBar = document.getElementById("search-bar-section");
+
+if(currentScreenSize<= 767){ //This is to append (course card) in details page once small screens are active.
+    detailsPage.appendChild(detailsPageCardContianer);
+}
+
 const disableWebTopicsPage = ()=>{
     if(checkboxInput.checked==true){// This ensures that details page is also on dark mode if dark mode was already toggled before switching to the details page.
         themeLinkDetailsPage.setAttribute("href", "Assets/CSS/dark-theme-details-page.css");
-        themeLinkMainPage.setAttribute("href", ""); //disable main page styles so it doesn't mix up with the dark theme style
+        themeLinkMainPage.setAttribute("href", ""); //disable main page styles so it doesn't overlap with the dark theme style.
     }
     webTopicsPage.removeEventListener("transitionend", disableWebTopicsPage);
 }
 
-for(let card of webTopicCards){//this is for switching to details page
-    card.addEventListener("click", ()=>{
-        detailsPageIsActive = true;
+const activateDetailsPage = ()=>{
+    detailsPageIsActive = true;
+    themeLinkDetailsPage.setAttribute("href", "Assets/CSS/details-page.css");
+}
+
+webTopicBox.addEventListener("click",(e)=>{//this is for switching to details page.
+    if(e.target.closest(".web-topic-card")){
+        activateDetailsPage();
         webTopicsPage.style.marginLeft = `-100%`;
         webTopicsPage.style.height= `${detailsPage.clientHeight}px`;
         webTopicsPage.style.opacity = "0";
@@ -141,23 +152,31 @@ for(let card of webTopicCards){//this is for switching to details page
         searchBar.style.opacity = "0";
         detailsPage.style.marginRight= `0`;
         detailsPage.style.opacity=`1`;
-        pageTitle.style.fontSize=`1.5rem`;
-        pageTitle.style.fontWeight=`700`;
+        if(currentScreenSize<= 767 && detailsPageIsActive == true){
+            pageTitle.style.fontSize="0.94rem";
+        }else
+        {
+            pageTitle.style.fontSize=`1.5rem`;
+            pageTitle.style.fontWeight=`700`;
+        }
         webTopicsPage.addEventListener("transitionend", disableWebTopicsPage);
-    })
-}
+    }else{
+        return;
+    }
+})
 
 const activateMainPageStyle = ()=>{
     detailsPageIsActive = false;
     if(checkboxInput.checked==true){
         themeLinkMainPage.setAttribute("href", "Assets/CSS/dark-theme-main-page.css");
+        themeLinkDetailsPage.setAttribute("href", "Assets/CSS/dark-theme-details-page.css");
     }else{
         themeLinkMainPage.setAttribute("href", "Assets/CSS/custom.css");
     }
     detailsPage.removeEventListener("transitionend",activateMainPageStyle);
 }
 
-pageTitle.addEventListener("click",()=>{//this for switching back to main page
+pageTitle.addEventListener("click",()=>{//this is for switching back to the main page
     if(detailsPageIsActive == true){
         webTopicsPage.style.height=`100%`;
         detailsPage.style.marginRight=`-100%`;
@@ -173,4 +192,3 @@ pageTitle.addEventListener("click",()=>{//this for switching back to main page
         location.reload();
     }
 })
-

@@ -22,8 +22,7 @@
 }
 
 .container{
-    padding-inline:4%; /*58px*/
-    /* overflow: hidden; */
+    padding-inline:4%;
 }
 
 body{
@@ -90,19 +89,12 @@ header{
 #dark-mode-label:hover{
     background-color: var(--body-text);
     color: var(--bg_default);
-    /* border: 1px solid black; */
 }
 
 
 .page-modes-buttons input[type="checkbox"] {
     display: none;
 }
-
-/* .modes-buttons:has(> input:checked){
-    background-color: #000;
-    color: #fff;
-} */
-
 
 /* BANNER SECTION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -202,7 +194,9 @@ header{
 }
 
 .search-bar span:nth-child(1){
-    padding:15px 3px 0 11px;
+    position: absolute;
+    top: 15px;
+    left: 11px; 
 }
 
 .search-icon{
@@ -215,6 +209,7 @@ header{
     width: 18%;
     padding: 0 0 0 13px;
     border-left: 2px solid var(--lines-color);
+    cursor: pointer;
 }
 
 .search-options p:nth-child(1){
@@ -361,7 +356,7 @@ main{
     margin-bottom: 15px;
 }
 
-/* details page style///////////////////////////////////////////////////////////////////////////// */
+/* DETAILS PAGE STYLES -----------------------------------------------------------------------------------> */
 
 .details-page{
     width: 100%;
@@ -373,15 +368,16 @@ main{
 
 .course-details-box{
     background-color: var(--bg_body);
-    position: relative;
 }
 
-.details-page-container{
-    padding:0 43.5% 0 19.29%;
+.course-details-box-container{
+    display: flex;
+    padding: 0 0 0 17.29%;
 }
 
 .course-details{
-    padding: 30px 0;
+    width: 50%;
+    padding: 30px;
 }
 
 .course-details h4{
@@ -390,7 +386,6 @@ main{
 }
 
 .course-details h5{
-    /* color: var(--body-text); */
     font-size: 1.5rem;
 }
 
@@ -398,19 +393,30 @@ main{
     margin-bottom: 20px;
 }
 
-.details-page-container p{
-    /* color: var(--body-text); */
+.course-details p{
+    color: var(--body-text);
     font-size:1.01rem;
+
+}
+
+.add-to-favourites-box p{
+    color: black;
 }
 
 /* course card ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.details-page-card-contianer{
+    margin-top: 30px;
+    position: relative;
+    width: 320px;
+}
 
 .details-page-card{
     background-color:var(--body-text);
     width: 320px;
     position: absolute;
-    top: 30px;  
-    right:277px;
+    top: 0;
+    left: 0;
     padding: 2px;
     box-shadow: 0px 0px 1px 0px rgb(0, 0, 0);
 }
@@ -445,7 +451,6 @@ main{
 
 .add-to-favourites-box{
     padding: 20px 20px 10px 20px;
-    /* margin-bottom: 15px; */
     border: 1px solid gray;
 }
 
@@ -477,6 +482,10 @@ main{
 
 /* course sub topics///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+.details-page-sub-topics-container{
+    padding:0 43.5% 0 19.29%;
+}
+
 .course-sub-topics{
     border: 1px solid var(--lines-color);
     border-radius: 5px;
@@ -489,18 +498,17 @@ main{
     border-bottom: 1px solid var(--lines-color);
 }
 
-.course-sub-topic:nth-child(7){
-    /* border-bottom: 1px solid var(--lines-color); */
+.course-sub-topic:last-child{
     border: 0;
 }
 
-.details-page-container .course-sub-topics .course-sub-topic h2{
+.course-sub-topic h2{
     padding: 15px 0 15px 30px;
     color: var(--body-text);
 }
 
-.details-page-container .course-sub-topics .course-sub-topic p {
-    padding: 15px 0 15px 0;
+.course-sub-topic p {
+    padding: 15px 5px 15px 0;
     color: var(--body-text);
     font-size: 1rem;
 }
