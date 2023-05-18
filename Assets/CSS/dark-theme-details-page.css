@@ -169,7 +169,7 @@ header{
     border-radius: 10px;
     background-color: var(--bg_default);
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.23);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .search-field{
@@ -207,27 +207,29 @@ header{
     display: flex;
     flex-wrap: wrap;
     width: 18%;
-    padding: 0 0 0 13px;
-    border-left: 2px solid var(--lines-color);
+    border-left: 1px solid var(--lines-color);
     cursor: pointer;
+    padding: 0 10px;
+
 }
 
-.search-options p:nth-child(1){
+.search-options label{
     width: 100%;
     font-size: 0.7em;
-    line-height: 1.6;
-    padding: 5px 0 0 2px;
+    padding: 0 0 0 5px;
+    transform: translateY(5px);
+    background-color: var(--bg_default);
+    color: var(--body-text);
 }
 
-.search-options p:nth-child(2){
-    width: 87%;
+.search-options select{
+    width: 100%;
     font-size: .9rem;
-    line-height: 1.17;
-}
-
-.search-down-arrow{
-    font-size: .8rem;
-    padding-bottom:1px;
+    border: 1px;
+    border-radius: 10px;
+    transform: translateY(-5px);
+    background-color: var(--bg_default);
+    color: var(--body-text);
 }
 
 /* WEB TOPICS COURSES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -288,8 +290,7 @@ main{
 
 
 .card-custom-container{
-    margin-top: 11px;
-    padding-inline: 6%;
+padding: 15px;
 }
 
 .card-details h4{
@@ -353,7 +354,6 @@ main{
 .card-details p{
     font-size: .8rem;
     color: gray;
-    margin-bottom: 15px;
 }
 
 /* DETAILS PAGE STYLES -----------------------------------------------------------------------------------> */
@@ -409,6 +409,10 @@ main{
     margin-top: 30px;
     position: relative;
     width: 320px;
+}
+
+.details-page-card-contianer-smallscreen{
+    display: none;
 }
 
 .details-page-card{

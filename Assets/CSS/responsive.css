@@ -58,7 +58,6 @@
 
     .search-field:placeholder-shown{
         font-size: 1rem;
-        /* padding-left: 40px; */
     }
 
     .search-field:focus{
@@ -76,18 +75,20 @@
         font-size: 1.01rem;
     }
 
+    .search-options select{
+        transform: translateY(0px);
+        width: 90%;
+    }
+
     .search-sort-option{
         border-right: 1px solid #DDDDDD;
     }
 
-    .search-options p:nth-child(1){
+    .search-options label{
         font-size: 0.65rem;
-        padding: 0;
+        transform: translateY(0px);
     }
     
-    .search-down-arrow{
-        font-size: 0.7em;
-    }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
@@ -205,12 +206,20 @@
         padding: 30px 0 15px 0
     }
 
+    .details-page-card-contianer-largescreen{
+        display: none;
+    }
+
+    .details-page-card-contianer-smallscreen{
+        display: block;
+    }
+
     .details-page-card{
         position: unset;
     }
 
-
 }
+
 @media(min-width: 768px) and (max-width: 799px){
     /* BANNER SECTION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -240,8 +249,8 @@
         width: 20%;
     }
 
-    .search-options p:nth-child(2){
-        width: 82%;
+    .search-options select{
+        width: 100%;
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
@@ -310,15 +319,15 @@
     /* SEARCH BAR//////////////////////////////////////////////////////////////////////////////////////////////////// */
 
     .search-field{
-        width: 56%;
+        width: 60%;
     }
 
     .search-options{
         width: 20%;
     }
 
-    .search-options p:nth-child(2){
-        width: 82%;
+    .search-options select{
+        width: 100%;
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
@@ -394,8 +403,8 @@
         width: 20%;
     }
 
-    .search-options p:nth-child(2){
-        width: 82%;
+    .search-options select{
+        width: 100%;
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
@@ -471,8 +480,8 @@
         width: 20%;
     }
 
-    .search-options p:nth-child(2){
-        width: 82%;
+    .search-options select{
+        width: 100%;
     }
 
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */

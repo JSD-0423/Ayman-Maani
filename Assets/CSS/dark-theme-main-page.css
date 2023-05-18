@@ -98,12 +98,6 @@ header{
     display: none;
 }
 
-/* .modes-buttons:has(> input:checked){
-    background-color: #000;
-    color: #fff;
-} */
-
-
 /* BANNER SECTION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .banner-section{
@@ -218,27 +212,27 @@ header{
     display: flex;
     flex-wrap: wrap;
     width: 18%;
-    padding: 0 0 0 13px;
     border-left: 2px solid var(--lines-color);
     cursor: pointer;
+    padding: 0 10px;
 }
 
-.search-options p:nth-child(1){
+.search-options label{
     width: 100%;
     font-size: 0.7em;
-    line-height: 1.6;
-    padding: 5px 0 0 2px;
+    padding: 0 0 0 5px;
+    transform: translateY(6px);
+    background-color: var(--bg_default);
+    color: var(--body-text);
 }
 
-.search-options p:nth-child(2){
-    width: 87%;
+.search-options select{
+    width: 100%;
     font-size: .9rem;
-    line-height: 1.17;
-}
-
-.search-down-arrow{
-    font-size: .8rem;
-    padding-bottom:1px;
+    border: 1px;
+    border-radius: 10px;
+    transform: translateY(-5px);
+    background-color: var(--bg_default);
     color: var(--body-text);
 }
 
@@ -301,8 +295,7 @@ main{
 
 
 .card-custom-container{
-    margin-top: 11px;
-    padding-inline: 6%;
+padding: 15px;
 }
 
 .card-details h4{
@@ -501,7 +494,6 @@ main{
 .card-details p{
     font-size: .8rem;
     color: gray;
-    margin-bottom: 15px;
 }
 
 /* FAVOURITES ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */

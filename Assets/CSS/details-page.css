@@ -55,6 +55,10 @@
     width: 320px;
 }
 
+.details-page-card-contianer-smallscreen{
+    display: none;
+}
+
 .details-page-card{
     background-color:var(--bg_default);
     width: 320px;
