@@ -180,7 +180,7 @@
     
     .course-details{
         padding: 15px;
-        width: 100%;
+        width: 93%;
     }
     
     /* course sub topics///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -189,14 +189,15 @@
         padding: 0 15px;
     }
 
-    .course-sub-topic h2{
-        padding: 15px 0 15px 30px;
-        color: var(--body-text);
+    .course-sub-topic h3{
+        width:91% ;
+    }
+
+    .course-sub-topic .checkmark{
+        font-size: 1.5rem;
+        width: 9%;
     }
     
-    .course-sub-topic p {
-        padding-right: 5px;
-    }
 
     /* details page's card///////////////////////////////////////////////////////////////////////////////////////////////// */
     

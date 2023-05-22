@@ -47,7 +47,7 @@ const adjustModesButtons = ()=>{ //This function adjust modes buttons for light 
         if(favouritesIsClicked == true){ //to prevent favourite button from resetting (changing color) when toggling dark mode on and off
             modesButtons[1].innerHTML=`<ion-icon id="heart" class="heart mode-icon heart-icon-red-color" name="heart"></ion-icon> Favourites`;
         }
-    }else if(currentScreenSize>= 768 && checkboxInput.checked==false){ //swap between "light mode" and "dark mode" words as needed, when the dark mode on or off
+    }else if(currentScreenSize>= 768 && checkboxInput.checked==false){ //swap between "light mode" and "dark mode" words as needed, when the dark mode is on or off
         modesButtons[0].innerHTML=`<ion-icon id="moon" class="moon mode-icon" name="moon-outline"></ion-icon> Dark Mode`;
     }else{// for small screens 
         modesButtons[0].innerHTML=`<ion-icon id="moon" class="moon mode-icon" name="moon-outline"></ion-icon>`;
@@ -154,8 +154,7 @@ webTopicBox.addEventListener("click",(e)=>{//this is for switching to details pa
         detailsPage.style.opacity=`1`;
         if(currentScreenSize<= 767 && detailsPageIsActive == true){
             pageTitle.style.fontSize="0.94rem";
-        }else
-        {
+        }else{
             pageTitle.style.fontSize=`1.5rem`;
             pageTitle.style.fontWeight=`700`;
         }

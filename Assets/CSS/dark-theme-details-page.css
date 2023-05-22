@@ -52,7 +52,7 @@ h3, h4, h5, h6, p{
 /* HEADER//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 header{
-    box-shadow: inset 0px 0px 2px 0px rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px -1px rgb(0, 0, 0);
     background-color: var(--bg_default);
 }
 
@@ -168,8 +168,7 @@ header{
     display: flex;
     border-radius: 10px;
     background-color: var(--bg_default);
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.23);
-    /* overflow: hidden; */
+    box-shadow: 0px 0px 9px -4px rgba(0,0,0,0.23);
 }
 
 .search-field{
@@ -267,7 +266,7 @@ main{
 .web-topic-card{
     background-color: var(--bg_default);
     border-radius: 10px;
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 5px -4px rgba(0,0,0,0.23);
     cursor: pointer;
 }
 
@@ -499,7 +498,10 @@ padding: 15px;
 
 .course-sub-topic{
     display: flex;
+    column-gap: 3%;
+    display: flex;
     border-bottom: 1px solid var(--lines-color);
+    padding: 15px 5px 15px 30px;
 }
 
 .course-sub-topic:last-child{
@@ -507,20 +509,20 @@ padding: 15px;
 }
 
 .course-sub-topic h2{
-    padding: 15px 0 15px 30px;
     color: var(--body-text);
 }
 
-.course-sub-topic p {
-    padding: 15px 5px 15px 0;
+.course-sub-topic h3{
     color: var(--body-text);
     font-size: 1rem;
+    width: 90%;
+    font-weight: 400;
 }
 
-.course-sub-topic span{
+.course-sub-topic .checkmark{
     font-size: 1.5rem;
-    padding: 15px 15px 0 30px;
     color: var(--brand-secondary);
+    width: 5%;
 }
 
 /* FAVOURITES ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
