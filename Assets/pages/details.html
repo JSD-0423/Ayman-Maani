@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link class="page-links" rel="stylesheet" href="../../Vendor/bootstrap/css/bootstrap.min.css">
+    <link class="page-links" id="default-details-page-theme" rel="stylesheet" href="../CSS/detials-page.css">
+    <link class="page-links" id="default-main-page-theme" rel="stylesheet" href="../CSS/custom.css">
+    <link class="page-links" rel="stylesheet" href="../CSS/responsive.css">
+    <title>details page</title>
+</head>
+<body>
+    <header class="position-relative">
+        <div class="container-fluid px-5 header-container">
+            <div class="page-modes d-flex justify-content-between align-items-center">
+                <div class="page-title">
+                    <a href="../../index.html"><h1 id="page-title" class="mb-0 lh-1" tabindex="0">Web Topics</h1></a>
+                </div>
+                <div class="page-modes-buttons">
+                    <button type="button" id="dark-mode-button" class="modes-buttons btn btn-outline-dark border rounded"><ion-icon id="moon" class="moon mode-icon" name="moon-outline"></ion-icon> Dark Mode</button>
+                    <button type="button" id="header-heart-button" class="modes-buttons btn border rounded"><ion-icon id="heart" class="heart mode-icon" name="heart-outline"></ion-icon> Favourites</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner-section">
+        <div class="banner position-relative">
+            <div class="banner-primary w-100 position-absolute top-0 start-0 z-1"></div>
+            <div class="banner-secondary w-100"></div>
+            <div class="container-fluid px-5 pb-1 banner-custom-container">
+                <div class="banner-message m-auto">
+                    <h2 class="mb-0">Welcome to our website!</h2>
+                    <p class="mb-0">We have a new design that's fresh, modern, and easy to use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="details-page" class="details-page">
+        <div id="course-details-box" class="course-details-box">
+            <div id="course-details-box-container" class="details-page-container d-flex">
+                <div class="course-details">
+                    <h4>Web Development Languages</h4>
+                    <h5>HTML</h5>
+                    <div class="star-rating-box">
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                            </div>
+                        </div>
+                        <div class="star-border">
+                            <div class="second-level-star">
+                                <div id="details-page-star-color-fill" class="star-color-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="course-details-para">HTML (Hypertext Markup Language) is the standard markup language for creating web pages and other information that can be displayed in a web browser. It provides a structure for content and defines how it should be displayed on a web page, including text, images, and multimedia. HTML is essential for creating static web pages and is a foundational technology for the World Wide Web.</p>
+                </div>
+                <div id="details-page-card-contianer" class="details-page-card-contianer position-relative">
+                    <div id="details-page-card" class="details-page-card position-absolute top-0 start-0">
+                        <div class="details-page-card-thumbnail">
+                            <img src="../images/topics-thumbnails/javascript.jpg" class="w-100 h-100" alt="html course">
+                        </div>
+                        <div class="details-page-card-custom-container">
+                            <h4><span>HTML</span> by <a href="#">Sarah Smith</a></h4>
+                            <div id="add-to-favourites-box" class="add-to-favourites-box">
+                                <p>Interested about this topic?</p>
+                                <button type="button" class="btn w-100 border-0 text-center rounded-0">Add to Favourites <ion-icon id="details-page-heart" class="details-page-heart" name="heart-outline"></ion-icon></button>
+                                <h6>Unlimited Credits</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="details-page-sub-topics-container" class="details-page-container  details-page-sub-topics-container">
+            <div id="course-sub-topics" class="course-sub-topics border rounded">
+                <ul class="course-sub-topics-list" title="course-sub-topics">
+                    <li class="course-sub-topic"><h2>HTML Sub Topics</h2></li>
+                    <li class="course-sub-topic"><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon> <h3>HTML syntax and structure</h3></li>
+                    <li class="course-sub-topic"><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon> <h3>HTML elements and attributes</h3></li>
+                    <li class="course-sub-topic"><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon> <h3>HTML forms and input elements</h3></li>
+                    <li class="course-sub-topic"><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon> <h3>HTML tables and lists</h3></li>
+                    <li class="course-sub-topic"><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon> <h3>HTML multimedia elements (audio, video, images)</h3></li>
+                    <li class="course-sub-topic"><ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon> <h3>HTML accessibility and semantic markup</h3></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="Footer-message">
+            <h6>Developed with <span><ion-icon class="footer-heart" name="heart"></ion-icon></span> <span class="copyright">&copy</span> 2023</h6>
+        </div>
+    </footer>
+    <section class=" favourites-section" id="favourites-section">
+        <div class="favourites-section-container container-fluid px-5">
+            <div class="favourites-items">
+                <h3>My Favourite Topics</h3>
+                <div class="favourites-items-container d-flex overflow-auto py-2">
+                    <div class="favourites-item">
+                        <div class="favourite-card-thumbnail">
+                            <img src="../images/topics-thumbnails/react.webp" alt="react course">
+                        </div>
+                        <div class="favourite-card-details-container p-2">
+                            <h5>React</h5>
+                            <div class="star-rating-box pt-1">
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                    </div>
+                                </div>
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                    </div>
+                                </div>
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                    </div>
+                                </div>
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                    </div>
+                                </div>
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                        <div class="star-color-fill-favourites"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="favourites-item">
+                        <div class="favourite-card-thumbnail">
+                            <img src="../images/topics-thumbnails/cloud.jpeg" alt="react course">
+                        </div>
+                        <div class="favourite-card-details-container p-2">
+                            <h5>Cloud Computing</h5>
+                            <div class="star-rating-box pt-1">
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                    </div>
+                                </div>
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                    </div>
+                                </div>
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                    </div>
+                                </div>
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                    </div>
+                                </div>
+                                <div class="star-border">
+                                    <div class="second-level-star">
+                                        <div class="star-color-fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- icons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- Bootstrap Js -->
+        <script src="../../Vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- custom Js -->
+    <script src="../JS/main.js"></script>
+</body>
+</html>

@@ -9,8 +9,8 @@
     /* transition-property: opacity, margin;
     transition-duration: 0.5s;
     transition-timing-function: ease-in; */
-    /* margin-right: -100%; */
-    opacity: 1;
+    margin-right: -100%;
+    opacity: 0;
     height: fit-content;
 }
 
