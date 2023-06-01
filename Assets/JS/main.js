@@ -269,6 +269,7 @@ const disableWebTopicsPage = ()=>{
 
 webTopicBox.addEventListener("click",(e)=>{//This controls the animation to switch to the details page.
     if(e.target.closest(".web-topic-card")){
+        e.preventDefault();//To prevent anchors from editing the URL
         webTopicsPage.style.marginLeft = `-100%`;
         webTopicsPage.style.height= `${detailsPage.clientHeight}px`;
         webTopicsPage.style.opacity = "0";
