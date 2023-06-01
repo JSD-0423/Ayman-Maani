@@ -861,7 +861,7 @@
     }
 
     .web-topics{
-        grid-template-columns:repeat(2,minmax(calc(50% - 9px), 17.71%)) ;
+        grid-template-columns:repeat(auto-fill, minmax(calc(50% - 9px), 1fr)) ;
         gap: 30px 18px;
     }
 
@@ -1111,7 +1111,7 @@
     }
 
     .web-topics{
-        grid-template-columns:repeat(2,minmax(calc(50% - 9px), 17.71%)) ;
+        grid-template-columns:repeat(auto-fill, minmax(calc(50% - 9px), 1fr)) ;
         gap: 30px 18px;
     }
 
@@ -1295,7 +1295,7 @@
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
     .web-topics{
-        grid-template-columns: repeat(3, 31.04%);
+        grid-template-columns: repeat(auto-fill, minmax(31.04%, 1fr));
         column-gap: 3.35%;
     }
 
@@ -1414,7 +1414,7 @@
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
     .web-topics{
-        grid-template-columns: repeat(3, 31.04%);
+        grid-template-columns: repeat(auto-fill, minmax(31.04%, 1fr) );
         column-gap: 3.35%;
     }
 
@@ -1534,7 +1534,7 @@
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
     .web-topics{
-        grid-template-columns: repeat(3,31.04%);
+        grid-template-columns: repeat(auto-fill, minmax(31.04%, 1fr));
         column-gap: 3.35%;
     }
 
@@ -1598,7 +1598,7 @@
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
     .web-topics{
-        grid-template-columns: repeat(3,31.04%);
+        grid-template-columns: repeat(auto-fill, minmax(31.04%, 1fr));
         column-gap: 3.35%;
     }
 
@@ -1661,7 +1661,7 @@
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
     .web-topics{
-        grid-template-columns: repeat(3, minmax(31.043%, 33.333%));
+        grid-template-columns: repeat(auto-fill, minmax(31.043%, 1fr));
         column-gap: 2.29%;
     }
 
@@ -1724,7 +1724,7 @@
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
     .web-topics{
-        grid-template-columns: repeat(3, minmax(31.043%, 33.333%));
+        grid-template-columns: repeat(auto-fill, minmax(31.043%, 1fr));
         column-gap: 2.29%;
     }
 
@@ -1779,7 +1779,7 @@
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
 
     .web-topics{
-        grid-template-columns: repeat(4, minmax(22.71%, 25%));
+        grid-template-columns: repeat(auto-fill, minmax(22.71%, 1fr));
         column-gap: 2.29%;
     }
 
@@ -1798,7 +1798,7 @@
 @media(min-width: 1280px) and (max-width:1439px){
     /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
     .web-topics{
-        grid-template-columns: repeat(4, minmax(22.71%, 25%));
+        grid-template-columns: repeat(auto-fill, minmax(22.71%, 1fr));
         column-gap: 2.29%;
     }
 }
