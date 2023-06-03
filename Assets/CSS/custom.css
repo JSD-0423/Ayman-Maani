@@ -89,6 +89,14 @@ header{
     cursor: pointer;
 }
 
+.page-title a{ /*for the standalnoe details page*/
+    font-size: 0.99rem;
+    color: var(--brand-primary);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .modes-buttons{
     font-family: Nunito-Sans;
     font-size: 0.9rem;
