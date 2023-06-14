@@ -1,0 +1,92 @@
+.headerSection {
+  background-color: var(--bg_default);
+  height: 70px;
+  transition: background-color ease-in 0.5s;
+  position: relative;
+}
+
+.headerContainer {
+  box-shadow: 0px 0px 5px -1px rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.pageModes {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageTitle{
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pageTitleH1 {
+  font-size: 0.99rem;
+  color: var(--brand-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modesButtons {
+  font-family: Nunito-Sans;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 1px solid var(--border-colors);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--body-text);
+  margin-right: 5px;
+}
+
+.moon{
+    padding-right: 5px;
+}
+
+.modesButtons ion-icon {
+  transform: translateY(2px);
+}
+
+.darkModeButton:hover {
+  background-color: var(--body-text);
+  color: var(--bg_default);
+  border: 1px solid var(--lines-color);
+}
+
+.heartIconRedColor {
+  color: var(--heart-color);
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 440px) {
+    /* Comment: Media query for max width 440px */
+    .headerContainer {
+        padding-inline: 4% !important;
+    }
+
+    .pageModes {
+        height: 67px;
+    }
+
+    .pageTitleH1 {
+        font-size: 0.94rem;
+    }
+
+    .modesButtons {
+        padding: 5px 10px 0;
+        font-size: 0.8rem;
+    }
+
+    .modeIcon {
+        transform: translateY(0);
+    }
+}
+

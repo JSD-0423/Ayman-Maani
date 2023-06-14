@@ -1,0 +1,436 @@
+/* WEB TOPICS COURSES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.mainSection{
+    overflow: hidden;
+    display: flex;
+}
+
+.webTopicsPage {
+    flex-shrink: 0;
+    width: 100%;
+    opacity: 1;
+    transition-property: margin, opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+}
+
+.mainCustomContainer {
+    padding-top: 12.5px;
+}
+
+.mainCustomContainer h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--body-text);
+    margin: 0 0 30px 0;
+}
+
+.webTopicsBoxParent {
+    padding-bottom: 4px;
+}
+
+.webTopics {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(20% - 24px), 1fr));
+    gap: 35px 30px;
+}
+
+.webTopicCard {
+    transition: background-color ease-in 0.5s;
+    background-color: var(--bg_default);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* web topic card image control//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.cardThumbnail {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.cardThumbnail img {
+    width: 100%;
+    height: 134.047px;
+    object-fit: cover;
+    background-color: var(--background-color-for-images);
+    vertical-align: middle;
+}
+
+/* Web topic card details style//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.cardCustomContainer {
+    padding: 15px;
+}
+
+.cardDetails h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.cardDetails h5 {
+    height: 31.688px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: .9rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
+
+.starRatingBox {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 15px;
+}
+
+.starBorder {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #d79500;
+    width: 16px;
+    height: 17px;
+    position: relative;
+}
+
+.secondLevelStar {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #d79500;
+    width: 10px;
+    height: 11px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.starColorFill {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--bg_default);
+    transition: background-color, ease-in, .5s;
+}
+
+/* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
+
+/*Custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* End of custom Star rating////////////////////////////////////////////////////////////////////////////////////////*/
+
+.cardDetails p {
+    font-size: .8rem;
+    color: gray;
+}
+
+/* MEDIA QUERY */
+
+@media(max-width: 440px){
+    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .mainCustomContainer{
+        padding-inline:4% !important;
+    }
+
+    .mainCustomContainer h3{
+        font-weight: 800;
+        font-size: 1.41rem;
+    }
+
+    .webTopics{
+        grid-template-columns: minmax(100%, 20%);
+        gap: 30px 0;
+    }
+
+    /* Web topic card details style//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .cardCustomContainer{
+        margin-top: 0px;
+        padding-inline: 4%;
+    }
+
+    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
+
+    .starBorder{
+        width: 15px;
+        height: 16px;
+    }
+
+    .secondLevelStar{
+        width: 11px;
+        height: 12px;
+        top: 2px;
+        left: 2px;
+    }
+        
+
+    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
+
+    .cardDetails p{
+        font-size: .75em;
+    }
+
+}
+
+@media(min-width: 441px) and (max-width:479px){
+    /*  WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .mainCustomContainer{
+        padding-inline:10% !important;
+    }
+
+    .mainCustomContainer h3{
+        font-weight: 800;
+        font-size: 1.41rem;
+    }
+
+    .webTopics{
+        grid-template-columns: minmax(100%, 20%);
+        gap: 30px 0;
+    }
+
+    /* Web topic card details style//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .cardCustomContainer{
+        margin-top: 0px;
+        padding-inline: 4%;
+    }
+
+    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
+
+    .starBorder{
+        width: 15px;
+        height: 16px;
+    }
+
+    .secondLevelStar{
+        width: 11px;
+        height: 12px;
+        top: 2px;
+        left: 2px;
+    }
+        
+
+    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
+
+    .cardDetails p{
+        font-size: .75em;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 519px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .mainCustomContainer {
+        padding-inline: 10% !important;
+    }
+
+    .mainCustomContainer h3 {
+        font-weight: 800;
+        font-size: 1.41rem;
+    }
+
+    .webTopics {
+        grid-template-columns: minmax(100%, 20%);
+        gap: 30px 0;
+    }
+
+    /* Web topic card details style//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .cardCustomContainer {
+        margin-top: 0px;
+        padding-inline: 4%;
+    }
+
+    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
+
+    .starBorder {
+        width: 15px;
+        height: 16px;
+    }
+
+    .secondLevelStar {
+        width: 11px;
+        height: 12px;
+        top: 2px;
+        left: 2px;
+    }
+
+    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
+
+    .cardDetails p {
+        font-size: .75em;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 649px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .mainCustomContainer {
+        padding-inline: 10% !important;
+    }
+
+    .mainCustomContainer h3 {
+        font-weight: 800;
+        font-size: 1.41rem;
+    }
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 9px), 1fr));
+        gap: 30px 18px;
+    }
+
+    /* Web topic card details style//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .cardCustomContainer {
+        margin-top: 0px;
+        padding-inline: 4%;
+    }
+
+    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
+
+    .starBorder {
+        width: 15px;
+        height: 16px;
+    }
+
+    .secondLevelStar {
+        width: 11px;
+        height: 12px;
+        top: 2px;
+        left: 2px;
+    }
+
+    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
+
+    .cardDetails p {
+        font-size: .75em;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 759px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .mainCustomContainer {
+        padding-inline: 10% !important;
+    }
+
+    .mainCustomContainer h3 {
+        font-weight: 800;
+        font-size: 1.41rem;
+    }
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 9px), 1fr));
+        gap: 30px 18px;
+    }
+
+    /* Web topic card details style//////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    .cardCustomContainer {
+        margin-top: 0px;
+        padding-inline: 4%;
+    }
+
+    /* default 4-star rating  ///////////////////////////////////////////////////////////////////////////////////////*/
+
+    .starBorder {
+        width: 15px;
+        height: 16px;
+    }
+
+    .secondLevelStar {
+        width: 11px;
+        height: 12px;
+        top: 2px;
+        left: 2px;
+    }
+
+    /* end of default 4-star rating  ///////////////////////////////////////////////////////////////////////////*/
+
+    .cardDetails p {
+        font-size: .75em;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 767px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(31.04%, 1fr));
+        column-gap: 3.35%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 799px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(31.04%, 1fr));
+        column-gap: 3.35%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 869px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(31.04%, 1fr));
+        column-gap: 3.35%;
+    }
+}
+
+@media (min-width: 870px) and (max-width: 911px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(31.04%, 1fr));
+        column-gap: 3.35%;
+    }
+}
+
+@media (min-width: 912px) and (max-width: 969px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(31.043%, 1fr));
+        column-gap: 2.29%;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1023px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(31.043%, 1fr));
+        column-gap: 2.29%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(22.71%, 1fr));
+        column-gap: 2.29%;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    /* WEB TOPICS COURSES////////////////////////////////////////////////////////////////////////////// */
+    .webTopics {
+        grid-template-columns: repeat(auto-fill, minmax(22.71%, 1fr));
+        column-gap: 2.29%;
+    }
+}
