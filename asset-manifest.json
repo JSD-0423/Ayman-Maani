@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Ayman-Maani-Project1/static/css/main.64aca7c1.css",
-    "main.js": "/Ayman-Maani-Project1/static/js/main.8280a9c5.js",
+    "main.js": "/Ayman-Maani-Project1/static/js/main.f62a3b6c.js",
     "static/media/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf": "/Ayman-Maani-Project1/static/media/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.01e880ae8f11b5aa2e31.ttf",
     "index.html": "/Ayman-Maani-Project1/index.html",
     "main.64aca7c1.css.map": "/Ayman-Maani-Project1/static/css/main.64aca7c1.css.map",
-    "main.8280a9c5.js.map": "/Ayman-Maani-Project1/static/js/main.8280a9c5.js.map"
+    "main.f62a3b6c.js.map": "/Ayman-Maani-Project1/static/js/main.f62a3b6c.js.map"
   },
   "entrypoints": [
     "static/css/main.64aca7c1.css",
-    "static/js/main.8280a9c5.js"
+    "static/js/main.f62a3b6c.js"
   ]
 }
