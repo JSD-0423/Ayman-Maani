@@ -10,6 +10,7 @@ export default function App() {
     {path: '', element: <Layout />, 
     errorElement:<PageNotFound />, 
     children:[
+      {index:true, element: <WebTopics/>},
       {path:'Web-Topics', element: <WebTopics/>},
       {path: 'Details', element: <Details />}
     ]},
