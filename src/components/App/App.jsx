@@ -8,7 +8,6 @@ import PageNotFound from '../PageNotFound/PageNotFound.jsx';
 export default function App() {
   const router = createBrowserRouter([
     {path: '', element: <Layout />,
-    path: 'Ayman-Maani-Project1', element:<Layout />,
     errorElement:<PageNotFound />, 
     children:[
       {index:true, element: <WebTopics/>},
