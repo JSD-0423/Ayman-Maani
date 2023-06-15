@@ -6,7 +6,7 @@ export const displayFethcedData = (webTopicsData)=>{
         return (
           <Link to="Details" className={style.webTopicCard} tabIndex="0">
             <div className={style.cardThumbnail}>
-              <img className={style.mainPageCardThumbnailImg} src={`images/topics-thumbnails/${webTopic.image}`} alt={`${webTopic.category}`} />
+              <img className={style.mainPageCardThumbnailImg} src={`./images/topics-thumbnails/${webTopic.image}`} alt={`${webTopic.category}`} />
             </div>
             <div className={style.cardCustomContainer}>
               <div className={style.cardDetails}>
