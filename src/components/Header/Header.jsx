@@ -15,7 +15,7 @@ export default function Header() {
 <header className={style.headerSection}>
   <div className={`container ${style.headerContainer}`}>
     <div className={style.pageModes}>
-      <Link to='Ayman-Maani-Project1' className={style.pageTitle}>
+      <Link to='/' className={style.pageTitle}>
         <h1 className={style.pageTitleH1} id="page-title" tabIndex="0">Web Topics</h1>
       </Link>
       <div className={style.pageModesButtons}>
