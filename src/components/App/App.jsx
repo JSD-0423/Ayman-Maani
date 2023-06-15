@@ -7,13 +7,13 @@ import PageNotFound from '../PageNotFound/PageNotFound.jsx';
 
 export default function App() {
   const router = createBrowserRouter([
-    {path: 'Ayman-Maani-Project1', element: <Layout />, 
+    {path: '/', element: <Layout />, 
     errorElement:<PageNotFound />, 
     children:[
       {index: true, element: <WebTopics/>},
       {path: 'Details', element: <Details />}
     ]},
-  ]);
+  ], { basename: process.env.PUBLIC_URL });
 
   return (
     <>
