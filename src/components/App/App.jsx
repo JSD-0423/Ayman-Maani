@@ -13,7 +13,9 @@ export default function App() {
       {index: true, element: <WebTopics/>},
       {path: 'Details', element: <Details />}
     ]},
-  ]);
+  ],{ basename: process.env.PUBLIC_URL }
+  
+  );
 
   return (
     <>
