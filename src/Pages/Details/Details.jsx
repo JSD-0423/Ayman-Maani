@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './CSS/Details.module.css';
 import { Link } from 'react-router-dom';
+import RatingStars from '../../components/RatingStars/RatingStars';
 
 export default function Details() {
   return (
@@ -10,25 +11,7 @@ export default function Details() {
       <div className={style.courseDetails}>
         <h4>Web Development Languages</h4>
         <h5>HTML</h5>
-        <div className={style.starRatingBox}>
-          <div className={style.starBorder}>
-            <div className={style.secondLevelStar}></div>
-          </div>
-          <div className={style.starBorder}>
-            <div className={style.secondLevelStar}></div>
-          </div>
-          <div className={style.starBorder}>
-            <div className={style.secondLevelStar}></div>
-          </div>
-          <div className={style.starBorder}>
-            <div className={style.secondLevelStar}></div>
-          </div>
-          <div className={style.starBorder}>
-            <div className={style.secondLevelStar}>
-              <div id="details-page-star-color-fill" className={style.starColorFill} />
-            </div>
-          </div>
-        </div>
+        <RatingStars />
         <p id="course-details-para">HTML (Hypertext Markup Language) is the standard markup language for creating web pages and other information that can be displayed in a web browser. It provides a structure for content and defines how it should be displayed on a web page, including text, images, and multimedia. HTML is essential for creating static web pages and is a foundational technology for the World Wide Web.</p>
       </div>
       <div id="details-page-card-contianer" className={style.detailsPageCardContianer}>

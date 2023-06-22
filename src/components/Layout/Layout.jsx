@@ -1,26 +1,24 @@
 import React from 'react';
-import './CSS/Layout.css';
+import './Layout.css';
 import Header from '../Header/Header.jsx';
 import Banner from '../Banner/Banner.jsx';
 import Favourites from '../Favourites/Favourites.jsx';
-import { FavouritesProvider } from '../Context/FavouritesContext';
-import { SearchProvider } from '../Context/SearchContext';
+import { DarkModeProvider } from '../Context/DarkModeContext';
 import Footer from '../Footer/Footer';
 import { Outlet } from 'react-router-dom';
 
-export default function Layout() {
+
+export default function Layout({headerFavouritesIsClicked, setHeaderFavouritesIsClicked}) {
 
   return (
     <>
-        <FavouritesProvider>
-            <Header />
-            <Banner />
-        <SearchProvider>
-        <Outlet></Outlet>
-        </SearchProvider>
-            <Favourites />
-        </FavouritesProvider>
+      <DarkModeProvider>
+        <Header headerFavouritesIsClicked={headerFavouritesIsClicked} setHeaderFavouritesIsClicked={setHeaderFavouritesIsClicked} />
+        <Banner />
+        <Outlet />
+        <Favourites headerFavouritesIsClicked={headerFavouritesIsClicked}/>
         <Footer />
+      </DarkModeProvider>
     </>
   )
 }

@@ -1,10 +1,8 @@
-import React, { useContext, useEffect } from 'react';
-import style from './CSS/Favourites.module.css';
-import {toggleFavourtiesSection} from './JS/Favourites.js';
-import { FavouritesContext } from '../Context/FavouritesContext';
+import React, { useEffect } from 'react';
+import style from './Favourites.module.css';
+import {toggleFavourtiesSection} from './Favourites.js';
 
-export default function Favourites() {
-  const {headerFavouritesIsClicked} = useContext(FavouritesContext);
+export default function Favourites({headerFavouritesIsClicked}) {
 
   useEffect(()=>{}, [headerFavouritesIsClicked])
   return (

@@ -1,28 +1,25 @@
-import React, { useContext, useState } from 'react';
-import style from './CSS/Header.module.css';
-import {DarkModeAdjustments} from './JS/Header.js';
-import { FavouritesContext } from '../Context/FavouritesContext';
+import React, { useContext } from 'react';
+import style from './Header.module.css';
+import {DarkModeAdjustments} from './Header.js';
 import { Link } from 'react-router-dom';
+import{DarkModeContext} from '../Context/DarkModeContext.js';
+import{favouritestabStatus} from './Header.js'
+import IconButton from '../IconButton/IconButton.jsx';
 
+export default function Header({headerFavouritesIsClicked, setHeaderFavouritesIsClicked}) {
 
-export default function Header() {
-
-  const [darkMode, setDarkMode] = useState(false);// initial text value of darkmode button 
-
-  const {favouritestabStatus, headerFavouritesIsClicked} = useContext(FavouritesContext);
+  const {darkMode , setDarkMode} = useContext (DarkModeContext);
 
   return (
 <header className={style.headerSection}>
   <div className={`container ${style.headerContainer}`}>
     <div className={style.pageModes}>
-      <Link to='' className={style.pageTitle}>
+      <Link to='/' className={style.pageTitle}>
         <h1 className={style.pageTitleH1} id="page-title" tabIndex="0">Web Topics</h1>
       </Link>
       <div className={style.pageModesButtons}>
-        <button onClick={() => DarkModeAdjustments(setDarkMode, darkMode)} type="button" id="dark-mode-button" className={`${style.darkModeButton} ${style.modesButtons}`}>
-          <span className={style.moon}><ion-icon id="moon" name="moon-outline" /></span>{darkMode ? 'Light Mode' : 'Dark Mode'}</button>
-        <button onClick={favouritestabStatus} type="button" id="header-heart-button" className={style.modesButtons}>
-          <span className={headerFavouritesIsClicked ? style.heartIconRedColor : ''}><ion-icon id="heart" name={headerFavouritesIsClicked ? "heart" : "heart-outline"} /></span> Favourites</button>
+      <IconButton btnFucntion={()=> DarkModeAdjustments(darkMode,setDarkMode)}  type="button" BtnId="dark-mode-button" BtnClasses={`${style.darkModeButton} ${style.modesButtons}`} iconClass={style.moon} iconId="moon" name="moon-outline" condition={darkMode ? 'Light Mode' : 'Dark Mode'} />
+      <IconButton btnFucntion={()=> favouritestabStatus(headerFavouritesIsClicked, setHeaderFavouritesIsClicked)} type="button" BtnId="header-heart-button" BtnClasses={style.modesButtons} iconClass = {headerFavouritesIsClicked ? style.heartIconRedColor : ''} iconId="heart" name={headerFavouritesIsClicked ? "heart" : "heart-outline"} BtnText="Favourites" />
       </div>
     </div>
   </div>

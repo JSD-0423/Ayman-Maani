@@ -1,4 +1,4 @@
-import style from '../CSS/Favourites.module.css';
+import style from './Favourites.module.css';
 export const toggleFavourtiesSection =(headerFavouritesIsClicked)=>{
     const FavouritesSection ={
         FavOn : style.favouritesAnimationForward,
