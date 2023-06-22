@@ -17,10 +17,10 @@ export default function App() {
 
   
   const router = createBrowserRouter([
-    {path: "", element: <Layout headerFavouritesIsClicked ={headerFavouritesIsClicked} setHeaderFavouritesIsClicked={setHeaderFavouritesIsClicked} />,
+    {path: "/", element: <Layout headerFavouritesIsClicked ={headerFavouritesIsClicked} setHeaderFavouritesIsClicked={setHeaderFavouritesIsClicked} />,
     errorElement:<PageNotFound />, 
     children:[
-      {path:""||"home", index:true, element: <Home webTopicsData = {webTopicsData} setWebTopicsData={setWebTopicsData} selectRef={selectRef} inputRef={inputRef} filterCategory={filterCategory} setFilterCategory={setFilterCategory} searchAPIArray={searchAPIArray} setSearchAPIArray={setSearchAPIArray} setAllFilters={setAllFilters} allFilters={allFilters} sortRef={sortRef} />},
+      {path:"/", index:true, element: <Home webTopicsData = {webTopicsData} setWebTopicsData={setWebTopicsData} selectRef={selectRef} inputRef={inputRef} filterCategory={filterCategory} setFilterCategory={setFilterCategory} searchAPIArray={searchAPIArray} setSearchAPIArray={setSearchAPIArray} setAllFilters={setAllFilters} allFilters={allFilters} sortRef={sortRef} />},
       {path: 'Details', element: <Details webTopicsData = {webTopicsData} setWebTopicsData={setWebTopicsData}  />}
     ]}],{ basename: process.env.PUBLIC_URL });
 
