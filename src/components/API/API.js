@@ -1,13 +1,14 @@
-export async function fetchWebTopicsData(setWebTopicsData,setSearchAPIArray,inputRef,setAllFilters){
+export async function fetchWebTopicsData(setWebTopicsData,setSearchAPIArray,inputRef,setAllFilters,setUnsortedArry){
     
 if(inputRef.current.value===""){
-    return getApiData(setWebTopicsData,setAllFilters);
+    return getApiData(setWebTopicsData,setAllFilters,setUnsortedArry);
 }else{
     return getApiDataWithSearch(setSearchAPIArray,inputRef);
 }
 }
 
-const getApiData = async(setWebTopicsData,setAllFilters)=>{
+const getApiData = async(setWebTopicsData,setAllFilters,setUnsortedArry)=>{
+    console.log("API has been called")
     try{
         let data = await fetch('https://tap-web-1.herokuapp.com/topics/list');
         if (!data.ok) {
@@ -15,7 +16,8 @@ const getApiData = async(setWebTopicsData,setAllFilters)=>{
         }else{
             let webTopicsData =  await data.json();
             setWebTopicsData([...webTopicsData]);
-            setAllFilters([...webTopicsData])
+            setAllFilters([...webTopicsData]);
+            setUnsortedArry([...webTopicsData]);
             return webTopicsData;
         }
     } catch (error){

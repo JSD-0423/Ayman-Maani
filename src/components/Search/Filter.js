@@ -25,7 +25,6 @@ import {fetchWebTopicsData} from '../API/API.js';
      }
    }
  
- 
    export const filterWithoutSearchInput = async(setWebTopicsData,selectRef,allFilters)=>{
     let filteredData;
      console.log("search bar is empty");
@@ -33,7 +32,7 @@ import {fetchWebTopicsData} from '../API/API.js';
        filteredData =allFilters.filter((card)=> card.category.toLowerCase().includes(selectRef.current.value.toLowerCase()));
        setWebTopicsData([...filteredData]);
      }else{
-        setWebTopicsData([...allFilters])
+        setWebTopicsData([...allFilters]);
      }
    }
  

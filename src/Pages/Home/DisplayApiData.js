@@ -1,4 +1,4 @@
-import TopicsCard from "../../components/TopicsCard/TopicsCard"
+import TopicsCard from "../../components/TopicsCard/TopicsCard";
 
 
 export const displayDataWithoutSearch = (webTopicsData)=>{
